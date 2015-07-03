@@ -1,0 +1,17 @@
+<ion-view view-title="Playlist">
+    <ion-content class="carousel-demo">
+        <ul rn-carousel rn-carousel-index="carouselIndex2" rn-carousel-auto-slide rn-carousel-buffered class="carousel2" on-double-tap="doRefresh()" on-swipe-down="doRefresh()">
+            <li ng-repeat="img in images">
+                <div style="background-image:url('{{img.image}}')" class="bgimage"></div>
+                <div class='description'>
+                    <p class='description_content'>{{img.photo_description}}</p>
+                </div>
+            </li>
+        </ul>
+        <div class="list card">
+            <div class="item item-body">
+                <h2 class="text-uppercase"></h2>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

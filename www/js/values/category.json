@@ -1,0 +1,36 @@
+[{
+	"id":"0",
+	"title":"Asian",
+	"slug":"asian",
+	"icon":""
+},{
+	"id":"1",
+	"title":"Bar",
+	"slug":"bar",
+	"icon":""
+},{
+	"id":"2",
+	"title":"Café",
+	"slug":"cafe",
+	"icon":""
+},{
+	"id":"3",
+	"title":"European",
+	"slug":"european",
+	"icon":""
+},{
+	"id":"4",
+	"title":"Indian",
+	"slug":"indian",
+	"icon":""
+},{
+	"id":"5",
+	"title":"Mexican",
+	"slug":"mexican",
+	"icon":""
+},{
+	"id":"6",
+	"title":"Take-out",
+	"slug":"take-out",
+	"icon":""
+}]

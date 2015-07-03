@@ -1,0 +1,15 @@
+<ion-view view-title="Directories">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-grid">
+        </button>
+    </ion-nav-buttons>
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}" class="item item-thumbnail-left">
+                <img ng-src="{{playlist.img}}">
+                <h2>{{playlist.title}}</h2>
+                <p>Nine Inch Nails</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
