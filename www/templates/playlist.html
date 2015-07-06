@@ -1,16 +1,43 @@
-<ion-view view-title="Playlist">
-    <ion-content class="carousel-demo">
-        <ul rn-carousel rn-carousel-index="carouselIndex2" rn-carousel-auto-slide rn-carousel-buffered class="carousel2" on-double-tap="doRefresh()" on-swipe-down="doRefresh()">
-            <li ng-repeat="img in images">
-                <div style="background-image:url('{{img.image}}')" class="bgimage"></div>
-                <div class='description'>
-                    <p class='description_content'>{{img.photo_description}}</p>
-                </div>
-            </li>
-        </ul>
+<ion-view view-title="">
+    <ion-content class="has-header carousel-demo">
+        <div class='wrapper'>
+            <ul rn-carousel rn-carousel-index="carouselIndex2" rn-carousel-auto-slide rn-carousel-buffered class="carousel2">
+                <li ng-repeat="img in detail.images">
+                    <div style="background-image:url('img/media/{{img.image}}')" class="bgimage"></div>
+                    <div class='description'>
+                        <p class='description_content'></p>
+                    </div>
+                </li>
+            </ul>
+            <div rn-carousel-indicators ng-if="detail.images.length > 1" slides="detail.images" rn-carousel-index="carouselIndex"></div>
+        </div>
         <div class="list card">
-            <div class="item item-body">
-                <h2 class="text-uppercase"></h2>
+            <div class="item">
+                <div class="content">
+                    <div class='estate-detail' ng-hide="detail.coords.latitude == ''">
+                        <a href="#/app/direction/{{detail.coords.latitude}}/{{detail.coords.longitude}}" class="button button-block button-positive icon-right ion-navigate">
+                            Get Directions
+                        </a>
+                    </div>
+                    <div class='estate-detail' ng-hide="detail.contact_no == ''">
+                        <a ng-click="" class="button button-block button-positive icon-right ion-android-call">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-body text-left">
+                <h2 class="text-uppercase text-center lead" ng-bind-html="detail.name"></h2>
+                <address>
+                    <strong style="color:#145fd7">Address</strong>
+                    <br>
+                    <span data-ng-bind-html="detail.location"></span>
+                    <br>
+                    <br>
+                    <strong style="color:#145fd7">Details</strong>
+                    <br>
+                    <span data-ng-bind-html="detail.content"></span>
+                </address>
             </div>
         </div>
     </ion-content>

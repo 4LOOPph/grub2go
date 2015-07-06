@@ -1,0 +1,20 @@
+<ion-view title="Direction">
+    <div class="bar bar-subheader bar-stable item-input-inset">
+        <div class="button-bar">
+            <a class="button icon {{button.icon}}" ng-repeat="button in filters" ng-click="eventButton(button.name)" ng-class="{'button-positive' : button.name === data.clientSide}">{{button.text}}</a>
+        </div>
+    </div>
+    <ion-content class="has-subheader">
+        <div class="content">
+            <div id="map_canvas">
+                <ui-gmap-google-map control="map.control" center="map.center" zoom="map.zoom" draggable="false" options="options">
+                    <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id"></ui-gmap-marker>
+                </ui-gmap-google-map>
+            </div>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-positive">
+        <a ng-click="centerOnMe(data.clientSide)" class="button button-icon icon ion-navigate" ng-disabled="!enableFind">{{buttonText}}</a></a>
+        <h1 class="title"></h1>
+    </div>
+</ion-view>

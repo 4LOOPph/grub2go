@@ -1,4 +1,4 @@
-<ion-view view-title="Playlists">
+<ion-view view-title="Category">
     <ion-nav-buttons side="right">
         <button class="button button-icon button-clear ion-grid">
         </button>
@@ -6,7 +6,7 @@
     <ion-content>
         <ion-list>
             <ion-item ng-repeat="playlist in playlists" href="#/app/directory/{{playlist.id}}" class="item item-thumbnail-left">
-                <img ng-src="{{playlist.icon}}">
+                <img ng-src="img/category/{{playlist.icon}}">
                 <h2>{{playlist.title}}</h2>
             </ion-item>
         </ion-list>

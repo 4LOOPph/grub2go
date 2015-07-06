@@ -8,6 +8,9 @@
     "angular": "1.4.1"
   },
   "dependencies": {
-    "angular-carousel": "~0.3.12"
+    "angular-carousel": "~0.3.12",
+    "angular-google-maps": "~2.1.5",
+    "angularjs-google-directions": "~0.1.0",
+    "ngCordova": "~0.1.17-alpha"
   }
 }

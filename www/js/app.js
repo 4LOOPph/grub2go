@@ -15,42 +15,44 @@ var run = function($ionicPlatform) {
 var config = function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('app', {
-            url: "/app",
+            url: '/app',
             abstract: true,
-            templateUrl: "templates/menu.html",
+            templateUrl: 'templates/menu.html',
             controller: 'AppCtrl'
         })
-        .state('app.search', {
-            url: "/search",
+        .state('app.direction', {
+            url: '/direction/:lat/:lng',
             views: {
                 'menuContent': {
-                    templateUrl: "templates/search.html"
+                    templateUrl: 'templates/direction.html',
+                    controller: 'DirectionCtrl'
                 }
             }
         })
         .state('app.playlists', {
-            url: "/playlists",
+            url: '/playlists',
             views: {
                 'menuContent': {
-                    templateUrl: "templates/playlists.html",
-                    controller: 'PlaylistsCtrl'
+                    templateUrl: 'templates/playlists.html',
+                    controller: 'CategoryCtrl'
                 }
             }
         })
         .state('app.directory', {
-            url: "/directory/:categoryid",
+            url: '/directory/:categoryid',
             views: {
                 'menuContent': {
-                    templateUrl: "templates/browse.html"
+                    templateUrl: 'templates/browse.html',
+                    controller: 'ListCtrl'
                 }
             }
         })
         .state('app.detail', {
-            url: "/detail/:playlistId",
+            url: '/detail/:categoryid/:detailId',
             views: {
                 'menuContent': {
-                    templateUrl: "templates/playlist.html",
-                    controller: 'PlaylistCtrl'
+                    templateUrl: 'templates/playlist.html',
+                    controller: 'ListDetailCtrl'
                 }
             }
         });
@@ -59,6 +61,15 @@ var config = function($stateProvider, $urlRouterProvider) {
 };
 
 
-angular.module('starter', ['ionic', 'angular-carousel'])
+angular.module('starter', ['ionic','ngCordova','ngSanitize','angular-carousel','uiGmapgoogle-maps','dbaq.google.directions'])
     .run(run)
-    .config(config);
+    .config(config)
+    .config(['uiGmapGoogleMapApiProvider',
+        function(GoogleMapApi) {
+            GoogleMapApi.configure({
+                key: 'AIzaSyACSd3JBILskQywQDjTosWQ7RjW2KGg5nI',
+                v: '3.17',
+                libraries: 'weather,geometry,visualization'
+            });
+        }
+    ]);

@@ -1,6 +1,6 @@
 'use strict';
 
-var DataFactory = function($http, $filter) {
+var DataFactory = function($http) {
     var DataFactory = {};
 
     DataFactory.categories = function() {
@@ -9,12 +9,9 @@ var DataFactory = function($http, $filter) {
         });
     };
 
-    DataFactory.directories = function(categoryid) {
+    DataFactory.directories = function() {
         return $http.get('js/values/directory.json').success(function(res) {
-            var data = $filter('filter')(res, {
-                categoryid: categoryid
-            });
-            return data;
+            return res;
         });
     };
 

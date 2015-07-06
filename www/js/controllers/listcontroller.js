@@ -1,18 +1,25 @@
 'use strict';
 
 angular.module('starter')
-    .controller('PlaylistsCtrl', function($scope,DataFactory) {
-        $scope.playlists= [];
-        console.log($stateParams.categoryid);
-        DataFactory.categories().then(function(data){
-            $scope.playlists = data.data;
+    .controller('ListCtrl', function($scope, $stateParams,$filter,DataFactory) {
+        $scope.playlists = [];
+
+        DataFactory.directories().then(function(data) {
+            var data = $filter('filter')(data.data, {
+                categoryid: $stateParams.categoryid
+            });
+            $scope.playlists = data;
         });
     })
+    .controller('ListDetailCtrl', function($scope, $stateParams,$filter,DataFactory) {
+        $scope.detail = [];
 
-.controller('DirectoryCtrl', function($scope, $stateParams) {
+        DataFactory.directories().then(function(data) {
+            var data = $filter('filter')(data.data, {
+                categoryid: $stateParams.categoryid
+            });
 
-});
-
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-
-});
+            $scope.detail = data[$stateParams.detailId];
+            console.log('$scope.detail: ',$scope.detail);
+        });
+    });
