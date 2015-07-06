@@ -3,11 +3,21 @@
         <button class="button button-icon button-clear ion-grid">
         </button>
     </ion-nav-buttons>
+
+
     <ion-content>
-        <ion-list>
-            <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}"><img src="../www/img{{playlist.image}}">
-                {{playlist.title}}
-            </ion-item>
-        </ion-list>
+    <div class="list">
+
+        <a ng-repeat="playlist in playlists" 
+           href="#/app/playlists/{{playlist.id}}"
+           class="item item-thumbnail-left">
+
+          <img ng-src="{{playlist.image}}">
+          <h2>{{ playlist.title }}</h2>
+          <h4>{{ playlist.address }}</h4>
+        </a>
+
+      </div>
+     
     </ion-content>
 </ion-view>

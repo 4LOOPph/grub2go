@@ -43,11 +43,12 @@ angular.module('starter.controllers', [])
 
 .controller('PlaylistsCtrl', function($scope) {
   $scope.playlists = [
-    { title: 'jollibee', id: 1,image:'jollibee.jpg' },
-    { title: 'kfc ', id: 2,image: 'kfc.jpg' },
-    { title: 'MC DO', id: 3,image: 'mcdo.png' },
-    { title: 'Inasal', id: 4,image: 'inasal.jpg' },
-    { title: 'Chowking', id: 5 ,image: 'chowking.jpg'},
+    { title: 'jollibee', id: 1,image:'img/icons/jollibee.png',address: 'address 1' },
+    { title: 'kfc ', id: 2,image: 'img/icons/kfc.jpg',address: 'address 2' },
+    { title: 'MC DO', id: 3,image: 'img/icons/mcdo.jpg',address: 'address 3' },
+    { title: 'Inasal', id: 4,image: 'img/icons/inasal.jpg',address: 'address 4' },
+    { title: 'Chowking', id: 5 ,image: 'img/icons/chowking.jpg',address: 'address 5'},
+    { title: 'kfc ', id: 6,image: 'img/icons/kfc.jpg',address: 'address 6' }
   ];
 })
 
