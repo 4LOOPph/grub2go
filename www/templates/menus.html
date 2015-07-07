@@ -8,13 +8,13 @@
     <ion-content>
     <div class="list">
 
-        <a ng-repeat="playlist in playlists" 
-           href="#/app/playlists/{{playlist.id}}"
+        <a ng-repeat="menu in menus" 
+           href="#/app/menudetails/{{$index}}"
            class="item item-thumbnail-left">
 
-          <img ng-src="{{playlist.image}}">
-          <h2>{{ playlist.title }}</h2>
-          <h4>{{ playlist.address }}</h4>
+          <img ng-src="{{menu.image}}">
+          <h2>{{ menu.title }}</h2>
+          <h4>{{ menu.address }}</h4>
         </a>
 
       </div>
