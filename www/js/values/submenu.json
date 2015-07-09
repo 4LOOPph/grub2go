@@ -1,0 +1,36 @@
+[{
+    "submenudescription": "Chicken",
+    "id": "1",
+    "logo": "../img/sub1.jpg",
+    "price": "P 234.00"
+}, {
+    "submenudescription": "Pork",
+    "id": "2",
+    "logo": "../img/sub1.jpg",
+    "price": "P 122.00"
+}, {
+    "submenudescription": "Beef",
+    "id": "3",
+    "logo": "../img/sub1.jpg",
+    "price": "P 135.00"
+}, {
+    "submenudescription": "Fish",
+    "id": "4",
+    "logo": "../img/sub1.jpg",
+    "price": "P 287.00"
+}, {
+    "submenudescription": "Dolphin",
+    "id": "5",
+    "logo": "../img/sub1.jpg",
+    "price": "P 198.00"
+}, {
+    "submenudescription": "Cow",
+    "id": "6",
+    "logo": "../img/sub1.jpg",
+    "price": "P 232.00"
+}, {
+    "submenudescription": "Cat",
+    "id": "7",
+    "logo": "../img/sub1.jpg",
+    "price": "P 322.00"
+}]

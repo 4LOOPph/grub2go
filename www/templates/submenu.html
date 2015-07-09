@@ -1,0 +1,11 @@
+<ion-view view-title=" Submenu ">
+    <ion-content>
+        <div class="list">
+            <a ng-repeat="submenus in submenus1" href="#/app/details/{{submenus.submenudescription}}" class="item item-thumbnail-left">
+                <img ng-src="{{submenus.logo}}">
+                <h2>{{submenus.submenudescription}}</h2>
+                <h4>{{submenus.price}}</h4>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
