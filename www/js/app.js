@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers'])
+angular.module('starter', ['ionic', 'starter.controllers', 'uiGmapgoogle-maps'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -54,7 +54,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         })
         .state('app.map1', {
-            url: "/map1/:map1id",
+            url: "/map1/:param",
             views: {
                 'menuContent': {
                     templateUrl: "templates/map1.html",
@@ -63,7 +63,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         })
         .state('app.submenu', {
-            url: "/submenu/:submenuid",
+            url: "/submenu/:param",
             views: {
                 'menuContent': {
                     templateUrl: "templates/submenu.html",
@@ -72,7 +72,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         })
         .state('app.details', {
-            url: "/details/:detailsid",
+            url: "/details/:xxx",
             views: {
                 'menuContent': {
                     templateUrl: "templates/details.html",
@@ -81,7 +81,7 @@ angular.module('starter', ['ionic', 'starter.controllers'])
             }
         })
         .state('app.map2', {
-            url: "/map2/:map2id",
+            url: "/map2/:param",
             views: {
                 'menuContent': {
                     templateUrl: "templates/map2.html",

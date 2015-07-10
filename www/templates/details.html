@@ -2,12 +2,18 @@
     <ion-content>
         <div class="list card">
             <div class="item item-avatar">
-                <img src="../img/sub1.jpg">
-                <h2>{{dettitle}}</h2>
-                <p>{{price}}</p>
+                <img src="../img/jollibeelogo.jpg">
+                <h2>{{Companyname}}</h2>
+                <p>{{Location}}</p>
             </div>
-            <div class="item item-body">
-                <img class="full-image" src="img/delorean.jpg">
+            <div class="item item-body" animation="slide-left-right-ios7">
+                <ion-slide-box active-slide="myActiveSlide">
+                    <ion-slide ng-repeat="photo in photoarray">
+                        <div class="box">
+                            <img class="full-image" ng-src="{{photo}}">
+                        </div>
+                    </ion-slide>
+                </ion-slide-box>
                 <p>
                     {{dscrptn}}
                 </p>
@@ -29,7 +35,7 @@
             </div>
         </div>
         <div style="padding:0px 8px 0px 8px">
-            <a href="#/app/map2/{{}}" class="button button-block icon-right icon ion-ios-telephone-outline button-assertive">Call</a>
+            <a href="" class="button button-block icon-right icon ion-ios-telephone-outline button-assertive">Call</a>
         </div>
         <div style="padding:0px 8px 0px 8px">
             <a href="#/app/map2/{{}}" class="button button-block icon-right icon ion-ios-location-outline button-balanced">Map</a>

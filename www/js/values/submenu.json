@@ -1,36 +1,36 @@
 [{
-    "submenudescription": "Chicken",
+    "submenudescription": "Max Y. Suniel St",
     "id": "1",
-    "logo": "../img/sub1.jpg",
-    "price": "P 234.00"
+    "logo": "../img/jollibeelogo.jpg",
+    "price": "10km from here"
 }, {
-    "submenudescription": "Pork",
+    "submenudescription": "Corealez St",
     "id": "2",
-    "logo": "../img/sub1.jpg",
-    "price": "P 122.00"
+    "logo": "../img/jollibeelogo.jpg",
+    "price": "20km from here"
 }, {
-    "submenudescription": "Beef",
+    "submenudescription": "Acacia St",
     "id": "3",
-    "logo": "../img/sub1.jpg",
-    "price": "P 135.00"
+    "logo": "../img/jollibeelogo.jpg",
+    "price": "30km from here"
 }, {
-    "submenudescription": "Fish",
+    "submenudescription": "Amfana St",
     "id": "4",
-    "logo": "../img/sub1.jpg",
-    "price": "P 287.00"
+    "logo": "../img/jollibeelogo.jpg",
+    "price": "40km from here"
 }, {
-    "submenudescription": "Dolphin",
+    "submenudescription": "Concordio St",
     "id": "5",
-    "logo": "../img/sub1.jpg",
-    "price": "P 198.00"
+    "logo": "../img/jollibeelogo.jpg",
+    "price": "50km from here"
 }, {
-    "submenudescription": "Cow",
+    "submenudescription": "Burgos St",
     "id": "6",
-    "logo": "../img/sub1.jpg",
-    "price": "P 232.00"
+    "logo": "../img/jollibeelogo.jpg",
+    "price": "60km from here"
 }, {
-    "submenudescription": "Cat",
+    "submenudescription": "Capistrano St",
     "id": "7",
-    "logo": "../img/sub1.jpg",
-    "price": "P 322.00"
+    "logo": "../img/jollibeelogo.jpg",
+    "price": "70km from here"
 }]

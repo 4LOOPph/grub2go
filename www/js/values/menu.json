@@ -1,36 +1,51 @@
 [{
-    "menudescription": "39rs",
+    "menudescription": "Golden Cowrie",
     "id": "1",
-    "logo": "../img/39rs.jpg",
+    "logo": "../img/goldencowre.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
-    "menudescription": "breakfast",
+    "menudescription": "Candy's Cafe",
     "id": "2",
-    "logo": "../img/breakfast.jpg",
+    "logo": "../img/candyscafe.jpg",
+    "desc": "dsaoreuh 24iudhf 4"
+}, {
+    "menudescription": "Bigby's Cafe and Restaurant",
+    "id": "3",
+    "logo": "../img/bigbys.jpg",
+    "desc": "dsaoreuh 24iudhf 4"
+}, {
+    "menudescription": "Chub's Diner",
+    "id": "4",
+    "logo": "../img/chubs.jpg",
+    "desc": "dsaoreuh 24iudhf 4"
+}, {
+    "menudescription": "Misto",
+    "id": "5",
+    "logo": "../img/misto.jpg",
+    "desc": "dsaoreuh 24iudhf 4"
+}, {
+    "menudescription": "Jollibee",
+    "id": "6",
+    "logo": "../img/jollibeelogo.jpg",
     "desc": "daoreuh 24iudhf 4"
 }, {
-    "menudescription": "bucket",
-    "id": "3",
-    "logo": "../img/bucket.jpg",
+    "menudescription": "Macdonalds",
+    "id": "7",
+    "logo": "../img/macdonalds.jpg",
     "desc": "ewr  retre ewrwr"
 }, {
-    "menudescription": "burger",
-    "id": "4",
-    "logo": "../img/burger.jpg",
-    "desc": "ewrew rtewwe"
-}, {
-    "menudescription": "dessert",
-    "id": "5",
-    "logo": "../img/dessert.jpg",
+    "menudescription": "Sentro 1850",
+    "id": "8",
+    "logo": "../img/sentro.jpg",
     "desc": "ewrwe erew"
 }, {
-    "menudescription": "kidsmeal",
-    "id": "6",
-    "logo": "../img/kidsmeal.jpg",
+    "menudescription": "Boy Zugba",
+    "id": "9",
+    "logo": "../img/boyzugba.jpeg",
     "desc": "ewrew rewr"
 }, {
-    "menudescription": "spag",
-    "id": "7",
-    "logo": "../img/spag.jpg",
+    "menudescription": "Kagay-Anon Restaurant",
+    "id": "10",
+    "logo": "../img/kagay-anun.jpg",
     "desc": "ewrewr ewr"
 }]

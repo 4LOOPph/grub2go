@@ -21,9 +21,14 @@ angular.module('starter')
                 return data;
             });
         };
-        
+
         DataFactory.Details = function() {
             return $http.get('js/values/details.json').then(function(data) {
+                return data;
+            });
+        };
+        DataFactory.Details2 = function() {
+            return $http.get('js/values/details2.json').then(function(data) {
                 return data;
             });
         };
