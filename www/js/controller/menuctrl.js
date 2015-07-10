@@ -7,3 +7,4 @@ angular.module('starter')
             console.log('menu data: ',$scope.menus);
         });
     });
+ 

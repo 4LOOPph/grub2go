@@ -8,4 +8,4 @@ angular.module('starter')
             console.log('map2 data: ',data.data);
         });
         $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
-    });
+    }); 
