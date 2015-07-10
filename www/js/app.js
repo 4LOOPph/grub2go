@@ -53,6 +53,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 }
             }
         })
+        .state('app.map1', {
+            url: "/map1/:map1id",
+            views: {
+                'menuContent': {
+                    templateUrl: "templates/map1.html",
+                    controller: 'Map1Ctrl'
+                }
+            }
+        })
         .state('app.submenu', {
             url: "/submenu/:submenuid",
             views: {
@@ -68,6 +77,15 @@ angular.module('starter', ['ionic', 'starter.controllers'])
                 'menuContent': {
                     templateUrl: "templates/details.html",
                     controller: 'DetailsCtrl'
+                }
+            }
+        })
+        .state('app.map2', {
+            url: "/map2/:map2id",
+            views: {
+                'menuContent': {
+                    templateUrl: "templates/map2.html",
+                    controller: 'Map2Ctrl'
                 }
             }
         })

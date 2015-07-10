@@ -1,10 +1,15 @@
 <ion-view view-title="Menu">
+    <ion-nav-buttons side="right">
+        <button class="button button-clear icon ion-ios-grid-view-outline">
+        </button>
+    </ion-nav-buttons>
     <ion-content>
-        <div class="list">
-            <a ng-repeat="menu in menus" href="#/app/submenu/{{menu.menudescription}}" class="item item-thumbnail-left">
+ 		<div class="list">
+            <a ng-repeat="menu in menus" href="#/app/map1/{{}}" class="item item-thumbnail-left item-icon-right">
                 <img ng-src="{{menu.logo}}">
                 <h2>{{menu.menudescription}}</h2>
                 <h4>{{menu.desc}}</h4>
+                <i class="icon ion-ios-arrow-right"></i>
             </a>
         </div>
     </ion-content>

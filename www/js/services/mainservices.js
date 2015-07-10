@@ -10,6 +10,12 @@ angular.module('starter')
             });
         };
 
+        DataFactory.Map1 = function() {
+            return $http.get('js/values/map1.json').then(function(data) {
+                return data;
+            });
+        };
+
         DataFactory.Submenu = function() {
             return $http.get('js/values/submenu.json').then(function(data) {
                 return data;
@@ -21,6 +27,10 @@ angular.module('starter')
                 return data;
             });
         };
-
+        DataFactory.Map2 = function() {
+            return $http.get('js/values/map2.json').then(function(data) {
+                return data;
+            });
+        };
         return DataFactory;
     });
