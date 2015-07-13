@@ -1,51 +1,26 @@
 [{
-    "menudescription": "Golden Cowrie",
+    "title": "Fast Food",
     "id": "1",
     "logo": "../img/goldencowre.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
-    "menudescription": "Candy's Cafe",
+    "title": "wew",
     "id": "2",
     "logo": "../img/candyscafe.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
-    "menudescription": "Bigby's Cafe and Restaurant",
+    "title": "Bigby's Cafe and Restaurant",
     "id": "3",
     "logo": "../img/bigbys.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
-    "menudescription": "Chub's Diner",
+    "title": "Chub's Diner",
     "id": "4",
     "logo": "../img/chubs.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
-    "menudescription": "Misto",
+    "title": "Misto",
     "id": "5",
     "logo": "../img/misto.jpg",
     "desc": "dsaoreuh 24iudhf 4"
-}, {
-    "menudescription": "Jollibee",
-    "id": "6",
-    "logo": "../img/jollibeelogo.jpg",
-    "desc": "daoreuh 24iudhf 4"
-}, {
-    "menudescription": "Macdonalds",
-    "id": "7",
-    "logo": "../img/macdonalds.jpg",
-    "desc": "ewr  retre ewrwr"
-}, {
-    "menudescription": "Sentro 1850",
-    "id": "8",
-    "logo": "../img/sentro.jpg",
-    "desc": "ewrwe erew"
-}, {
-    "menudescription": "Boy Zugba",
-    "id": "9",
-    "logo": "../img/boyzugba.jpeg",
-    "desc": "ewrew rewr"
-}, {
-    "menudescription": "Kagay-Anon Restaurant",
-    "id": "10",
-    "logo": "../img/kagay-anun.jpg",
-    "desc": "ewrewr ewr"
 }]

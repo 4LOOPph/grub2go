@@ -1,10 +1,15 @@
 'use strict';
 
 angular.module('starter')
-    .controller('SubmenuCtrl', function($rootScope, $scope,DataFactory) {
+    .controller('SubmenuCtrl', function($scope,$stateParams, $filter, DataFactory) {
         DataFactory.Submenu().then(function(data){
-        	$scope.submenus1 = data.data;
-            console.log('submenu data: ',$scope.submenus1);
-            $scope.submenus1.submenudescription;
-        })
+        	console.log(data.data);
+        	console.log('$stateParams.id: ',$stateParams.id);
+        	var submenus = $filter('filter')(data.data,{
+        		'menu_id':$stateParams.id
+        	});
+        	$scope.submenus = submenus;
+        	console.log(submenus);
+        });
+        
     });

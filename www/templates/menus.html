@@ -5,9 +5,9 @@
     </ion-nav-buttons>
     <ion-content>
  		<div class="list">
-            <a ng-repeat="menu in menus" href="#/app/map1/{{}}" class="item item-thumbnail-left item-icon-right">
+            <a ng-repeat="menu in menus" href="#/app/submenu/{{menu.id}}" class="item item-thumbnail-left item-icon-right">
                 <img ng-src="{{menu.logo}}">
-                <h2>{{menu.menudescription}}</h2>
+                <h2>{{menu.title}}</h2>
                 <h4>{{menu.desc}}</h4>
                 <i class="icon ion-ios-arrow-right"></i>
             </a>

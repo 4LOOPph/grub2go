@@ -1,36 +1,90 @@
 [{
-    "submenudescription": "Max Y. Suniel St",
-    "id": "1",
+    "title": "fast food 1",
+    "menu_id": "1",
     "logo": "../img/jollibeelogo.jpg",
-    "price": "10km from here"
-}, {
-    "submenudescription": "Corealez St",
-    "id": "2",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+    }]
+},{
+    "title": "fast food 2",
+    "menu_id": "1",
     "logo": "../img/jollibeelogo.jpg",
-    "price": "20km from here"
-}, {
-    "submenudescription": "Acacia St",
-    "id": "3",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed ",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+    }]
+},{
+    "title": "Max Y. Suniel St",
+    "menu_id": "2",
     "logo": "../img/jollibeelogo.jpg",
-    "price": "30km from here"
-}, {
-    "submenudescription": "Amfana St",
-    "id": "4",
+    "details": "Lorem ipsum dolor sit amet, consectetur",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+    }]
+},{
+    "title": "Max Y. Suniel St",
+    "menu_id": "2",
     "logo": "../img/jollibeelogo.jpg",
-    "price": "40km from here"
-}, {
-    "submenudescription": "Concordio St",
-    "id": "5",
-    "logo": "../img/jollibeelogo.jpg",
-    "price": "50km from here"
-}, {
-    "submenudescription": "Burgos St",
-    "id": "6",
-    "logo": "../img/jollibeelogo.jpg",
-    "price": "60km from here"
-}, {
-    "submenudescription": "Capistrano St",
-    "id": "7",
-    "logo": "../img/jollibeelogo.jpg",
-    "price": "70km from here"
-}]
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+        },{
+        "src": "../img/jollibeelogo.jpg"
+    }]
+}
+]

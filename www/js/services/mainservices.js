@@ -37,5 +37,10 @@ angular.module('starter')
                 return data;
             });
         };
+        DataFactory.XXX = function(id) {
+            return $http.get('js/values/menu.json',id).then(function(data) {
+                return data;
+            });
+        };
         return DataFactory;
     });
