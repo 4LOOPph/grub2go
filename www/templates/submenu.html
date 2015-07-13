@@ -1,10 +1,17 @@
 <ion-view view-title="Branches">
     <ion-content>
         <div class="list">
+<<<<<<< HEAD
             <a ng-repeat="submenu in submenus" href="#/app/details/{{submenu.menu_id}}/{{$index}}" class="item item-thumbnail-left item-icon-right">
                 <img ng-src="{{submenu.logo}}">
                 <h2>{{submenu.title}}</h2>
                 <h4>{{submenu.location}}</h4>
+=======
+            <a ng-repeat="submenus in submenus1" href="#/app/details/{{submenus.id}}" class="item item-thumbnail-left item-icon-right">
+                <img ng-src="{{submenus.logo}}">
+                <h2>desc:{{submenus.submenudescription}}</h2>
+                <h4>{{submenus.price}}</h4>
+>>>>>>> 96f3c885f33a61c6dfade2f689e6be899f9eb95d
                 <i class="icon ion-ios-arrow-right"></i>
             </a>
         </div>
