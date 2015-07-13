@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('starter')
-    .controller('DetailsCtrl', function($scope, $ionicSlideBoxDelegate, DataFactory) {
+    .controller('DetailsCtrl', function($scope, $ionicSlideBoxDelegate, DataFactory,$routeParams, $route ) {
         DataFactory.Details().then(function(data) {
             $scope.details = data.data;
             $scope.dscrptn = $scope.details[0].dscrptn;
@@ -9,6 +9,7 @@ angular.module('starter')
             $scope.numofcomments = $scope.details[0].numofcomments;
             $scope.Companyname = $scope.details[0].Companyname;
             $scope.Location = $scope.details[0].Location;
+            $scope.Phone = $scope.details[0].Phone;
         });
         DataFactory.Details2().then(function(data) {
             $scope.details2 = data.data;
@@ -22,6 +23,6 @@ angular.module('starter')
             $ionicSlideBoxDelegate.update();
         });
         $scope.myActiveSlide = 1;
+        console.log($routeParams);
 
     });
- 
