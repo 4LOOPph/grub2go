@@ -1,5 +1,12 @@
 <ion-view view-title="Restau Name">
     <ion-content>
+        <ion-slide-box active-slide="myActiveSlide">
+            <ion-slide ng-repeat="photo in photoarray">
+                <div class="box">
+                    <img class="full-image" ng-src="{{photo}}">
+                </div>
+            </ion-slide>
+        </ion-slide-box>
         <div class="list card">
             <div class="item item-avatar">
                 <img src="../img/jollibeelogo.jpg">
@@ -7,13 +14,6 @@
                 <p>{{Phone}}</p>
             </div>
             <div class="item item-body" animation="slide-left-right-ios7">
-                <ion-slide-box active-slide="myActiveSlide">
-                    <ion-slide ng-repeat="photo in photoarray">
-                        <div class="box">
-                            <img class="full-image" ng-src="{{photo}}">
-                        </div>
-                    </ion-slide>
-                </ion-slide-box>
                 <p>
                     {{dscrptn}}
                 </p>

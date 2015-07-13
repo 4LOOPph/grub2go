@@ -1,17 +1,18 @@
 <ion-view view-title="Location">
     <ion-content>
-        <ui-gmap-google-map center='map.center' zoom='map.zoom' events="map.markersEvents">
-          <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id" closeClick="hideMarkerPopup()" onClicked="showMarkerPopup()">
-
-          </ui-gmap-marker>
-        </ui-gmap-google-map>
-        <div style="padding:0px 8px 0px 8px">
-            <a href="#/app/submenu/{{}}" class="button button-block icon-right icon ion-ios-arrow-right button-calm">Find Near</a>
-        </div>
-        <div style="padding:0px 8px 0px 8px">
-            <a href="#/app/submenu/{{}}" class="button button-block icon-right icon ion-ios-arrow-right button-calm">Load all</a>
+        <div class="list">
+            <div id="map_canvas2">
+                <ui-gmap-google-map center='map.center' zoom='map.zoom' events="map.markersEvents">
+                    <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id" closeClick="hideMarkerPopup()" onClicked="showMarkerPopup()">
+                    </ui-gmap-marker>
+                </ui-gmap-google-map>
+            </div>
+            <div class="padding">
+                <a href="#/app/submenu/{{}}" class="button button-block icon-right icon ion-ios-arrow-right button-calm">Find Near</a>
+                <a href="#/app/submenu/{{}}" class="button button-block icon-right icon ion-ios-arrow-right button-calm">Load all</a>
+            </div>
         </div>
     </ion-content>
-		<div class="bar bar-footer bar-dark">
-		</div>
+    <div class="bar bar-footer bar-dark">
+    </div>
 </ion-view>
