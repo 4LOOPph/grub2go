@@ -57,7 +57,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'uiGmapgoogle-maps', 
             }
         })
         .state('app.submenu', {
-            url: "/submenu/:id",
+            url: "/submenu/:menuid",
             views: {
                 'menuContent': {
                     templateUrl: "templates/submenu.html",
@@ -66,7 +66,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'uiGmapgoogle-maps', 
             }
         })
         .state('app.details', {
-            url: "/details/:menuid/:id",
+            url: "/details/:uid",
             views: {
                 'menuContent': {
                     templateUrl: "templates/details.html",

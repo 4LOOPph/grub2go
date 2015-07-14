@@ -3,23 +3,21 @@
 angular.module('starter')
     .controller('DetailsCtrl', function($scope, $ionicSlideBoxDelegate, DataFactory,$stateParams, $filter) {
         DataFactory.Submenu().then(function(data){
-            var submenus = $filter('filter')(data.data,{
-                'menu_id':$stateParams.menuid
+            var details = $filter('filter')(data.data,{
+              'u_id':$stateParams.uid
             });
-            $scope.detalye = submenus[$stateParams.id];
+            $scope.det = details[0];
+            console.log($scope.det);
             $ionicSlideBoxDelegate.update();
         });
         $scope.myActiveSlide = 1;
-
-
-
         //show phone contacts when called
-        $scope.getContactList = function() {
-            $cordovaContacts.find({filter: ''}).then(function(result) {
-                $scope.contacts = result;
-                $console.log($scope.contacts);
-            }, function(error) {
-                console.log("ERROR: " + error);
-            });
-        }
+        // $scope.getContactList = function() {
+        //     $cordovaContacts.find({filter: ''}).then(function(result) {
+        //         $scope.contacts = result;
+        //         $console.log($scope.contacts);
+        //     }, function(error) {
+        //         console.log("ERROR: " + error);
+        //     });
+        // }
     });

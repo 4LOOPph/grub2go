@@ -1,7 +1,7 @@
 <ion-view view-title="Details">
     <ion-content>
         <ion-slide-box active-slide="myActiveSlide">
-            <ion-slide ng-repeat="photo in detalye.images">
+            <ion-slide ng-repeat="photo in det.images">
                 <div class="box">
                     <img class="full-image" ng-src="{{photo.src}}">
                 </div>
@@ -9,23 +9,23 @@
         </ion-slide-box>
         <div class="list card">
             <div class="item item-avatar">
-                <img src="{{detalye.logo}}">
-                <h2>{{Location}} </h2>
-                <p>{{Phone}}</p>
+                <img src="{{det.logo}}">
+                <h2>{{details.Location}} </h2>
+                <p>{{details.Phone}}</p>
             </div>
             <div class="item item-body" animation="slide-left-right-ios7">
                 <ion-slide-box active-slide="myActiveSlide">
-                    <ion-slide ng-repeat="photo in detalye">
+                    <ion-slide ng-repeat="photo in det">
                         <div class="box">
                             <img class="full-image" ng-src="{{photo.src}}">
                         </div>
                     </ion-slide>
                 </ion-slide-box>
                 <p>
-                  {{detalye.details}}
+                  {{det.details}}
                </p>
                 <p>
-                    {{detalye.details}}
+                    {{det.details}}
                     <a href="#" class="subdued">1000k Like</a>
                     <a href="#" class="subdued">200k Comments</a>
                 </p>

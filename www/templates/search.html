@@ -11,10 +11,10 @@
 
           </div>
           <div class="list">
-                  <a ng-repeat="companyname in dat | filter: title" href="#/app/details/{{dat.menu_id}}/{{$index}}" class="item item-thumbnail-left item-icon-right">
+                  <a ng-repeat="companyname in dat | filter: title" href="#/app/details/{{companyname.u_id}}" class="item item-thumbnail-left item-icon-right">
                       <img ng-src="{{companyname.logo}}">
                       <h2>{{companyname.title}}</h2>
-                      <h4>{{companyname.desc}}</h4>
+                      <h4>{{companyname.Phone}}</h4>
                       <i class="icon ion-ios-arrow-right"></i>
                   </a>
           </div>
