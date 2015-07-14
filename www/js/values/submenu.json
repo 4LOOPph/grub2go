@@ -350,11 +350,7 @@
         },{
         "src": "img/DrinksandLiquor/bourbon/2.jpg"
         },{
-<<<<<<< HEAD
-        "src": ".img/DrinksandLiquor/bourbon/3.jpg"
-=======
-        "src": "../img/DrinksandLiquor/bourbon/3.jpg"
->>>>>>> origin/dhan
+        "src": "img/DrinksandLiquor/bourbon/3.jpg"
         },{
         "src": "img/DrinksandLiquor/bourbon/4.jpg"
         },{
