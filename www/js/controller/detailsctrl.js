@@ -6,11 +6,12 @@ angular.module('starter')
             var submenus = $filter('filter')(data.data,{
                 'menu_id':$stateParams.menuid
             });
-            $scope.details = submenus[$stateParams.id];
+            $scope.detalye = submenus[$stateParams.id];
             $ionicSlideBoxDelegate.update();
-            console.log($scope.details);
         });
         $scope.myActiveSlide = 1;
+
+
 
         //show phone contacts when called
         $scope.getContactList = function() {

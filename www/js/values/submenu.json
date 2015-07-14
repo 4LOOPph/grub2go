@@ -71,9 +71,9 @@
         "src": "../img/fastfoods/kfc/5.jpg"
         }]
 },{
-    "title": "restaurant1",
+    "title": "Kagay-anon",
     "menu_id": "2",
-    "logo": "../img/restaurant/restaurant1/restaurant1.png",
+    "logo": "../img/restaurant/cagayanon/cagayanon.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
     "Location": "company-location",
@@ -84,20 +84,20 @@
     },
     "Phone": "788-0034",
     "images": [{
-        "src": "../img/restaurant/restaurant1/1.jpg"
+        "src": "../img/restaurant/cagayanon/1.png"
         },{
-        "src": "../img/restaurant/restaurant1/2.jpg"
+        "src": "../img/restaurant/cagayanon/2.jpg"
         },{
-        "src": "../img/restaurant/restaurant1/3.jpg"
+        "src": "../img/restaurant/cagayanon/3.jpg"
         },{
-        "src": "../img/restaurant/restaurant1/4.jpg"
+        "src": "../img/restaurant/cagayanon/4.jpg"
         },{
-        "src": "../img/restaurant/restaurant1/5.jpg"
+        "src": "../img/restaurant/cagayanon/5.jpg"
         }]
 },{
-    "title": "restaurant2",
+    "title": "Circa",
     "menu_id": "2",
-    "logo": "../img/restaurant/restaurant2/restaurant2.png",
+    "logo": "../img/restaurant/circa/circa.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
     "Location": "company-location",
@@ -108,20 +108,22 @@
     },
     "Phone": "788-0034",
     "images": [{
-        "src": "../img/restaurant/restaurant2/1.jpg"
+        "src": "../img/restaurant/circa/1.jpg"
         },{
-        "src": "../img/restaurant/restaurant2/2.jpg"
+        "src": "../img/restaurant/circa/2.jpg"
         },{
-        "src": "../img/restaurant/restaurant2/3.jpg"
+        "src": "../img/restaurant/circa/3.jpg"
         },{
-        "src": "../img/restaurant/restaurant2/4.jpg"
+        "src": "../img/restaurant/circa/4.jpg"
         },{
-        "src": "../img/restaurant/restaurant2/5.jpg"
+        "src": "../img/restaurant/circa/5.jpg"
+        },{
+        "src": "../img/restaurant/circa/6.jpg"
         }]
 },{
-    "title": "restaurant3",
+    "title": "Sentro",
     "menu_id": "2",
-    "logo": "../img/restaurant/restaurant3/restaurant3.png",
+    "logo": "../img/restaurant/sentro/sentro.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
     "Location": "company-location",
@@ -132,15 +134,213 @@
     },
     "Phone": "788-0034",
     "images": [{
-        "src": "../img/restaurant/restaurant3/1.jpg"
+        "src": "../img/restaurant/sentro/1.jpg"
         },{
-        "src": "../img/restaurant/restaurant3/2.jpg"
+        "src": "../img/restaurant/sentro/2.jpg"
         },{
-        "src": "../img/restaurant/restaurant3/3.jpg"
+        "src": "../img/restaurant/sentro/3.jpg"
         },{
-        "src": "../img/restaurant/restaurant3/4.jpg"
+        "src": "../img/restaurant/sentro/4.jpg"
         },{
-        "src": "../img/restaurant/restaurant3/5.jpg"
+        "src": "../img/restaurant/sentro/5.jpg"
+     }]
+},{
+    "title": "Albertos",
+    "menu_id": "3",
+    "logo": "../img/pizza/albertos/albertos.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/pizza/albertos/1.jpg"
+        },{
+        "src": "../img/pizza/albertos/2.jpg"
+        },{
+        "src": "../img/pizza/albertos/3.jpg"
+        },{
+        "src": "../img/pizza/albertos/4.jpg"
+        },{
+        "src": "../img/pizza/albertos/5.jpg"
+     }]
+},{
+    "title": "Big Flat Bread",
+    "menu_id": "3",
+    "logo": "../img/pizza/bigflatbread/bigflatbread.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/pizza/bigflatbread/1.jpg"
+        },{
+        "src": "../img/pizza/bigflatbread/2.jpg"
+        },{
+        "src": "../img/pizza/bigflatbread/3.jpg"
+        },{
+        "src": "../img/pizza/bigflatbread/4.jpg"
+        },{
+        "src": "../img/pizza/bigflatbread/5.jpg"
+     }]
+},{
+    "title": "Calda Pizza",
+    "menu_id": "3",
+    "logo": "../img/pizza/caldapizza/caldapizza.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/pizza/caldapizza/1.jpg"
+        },{
+        "src": "../img/pizza/caldapizza/2.jpg"
+        },{
+        "src": "../img/pizza/caldapizza/3.jpg"
+        },{
+        "src": "../img/pizza/caldapizza/4.jpg"
+        },{
+        "src": "../img/pizza/caldapizza/5.jpg"
+     }]
+},{
+    "title": "Starbucks",
+    "menu_id": "5",
+    "logo": "../img/coffeeandtea/starbucks/starbucks.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/coffeeandtea/starbucks/1.jpg"
+        },{
+        "src": "../img/coffeeandtea/starbucks/2.jpg"
+        },{
+        "src": "../img/coffeeandtea/starbucks/3.jpg"
+        },{
+        "src": "../img/coffeeandtea/starbucks/4.jpg"
+        },{
+        "src": "../img/coffeeandtea/starbucks/5.jpg"
+     }]
+},{
+    "title": "Bo's Coffee",
+    "menu_id": "5",
+    "logo": "../img/coffeeandtea/boscoffee/boscoffee.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/coffeeandtea/boscoffee/1.jpg"
+        },{
+        "src": "../img/coffeeandtea/boscoffee/2.jpg"
+        },{
+        "src": "../img/coffeeandtea/boscoffee/3.jpg"
+        },{
+        "src": "../img/coffeeandtea/boscoffee/4.jpg"
+        },{
+        "src": "../img/coffeeandtea/boscoffee/5.jpg"
+     }]
+},{
+    "title": "Blugre",
+    "menu_id": "5",
+    "logo": "../img/coffeeandtea/blugre/blugre.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/coffeeandtea/blugre/1.jpg"
+        },{
+        "src": "../img/coffeeandtea/blugre/2.jpg"
+        },{
+        "src": "../img/coffeeandtea/blugre/3.jpg"
+        },{
+        "src": "../img/coffeeandtea/blugre/4.jpg"
+        },{
+        "src": "../img/coffeeandtea/blugre/5.jpg"
+         },{
+         "src": "../img/coffeeandtea/blugre/6.jpg"
+         },{
+         "src": "../img/coffeeandtea/blugre/7.jpg"
+         },{
+         "src": "../img/coffeeandtea/blugre/8.jpg"
+      }]
+},{
+    "title": "Que Rico",
+    "menu_id": "4",
+    "logo": "../img/DrinksandLiquor/querico/querico.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/DrinksandLiquor/querico/1.jpg"
+        },{
+        "src": "../img/DrinksandLiquor/querico/2.jpg"
+        },{
+        "src": "../img/DrinksandLiquor/querico/3.jpg"
+        },{
+        "src": "../img/DrinksandLiquor/querico/4.jpg"
+        },{
+        "src": "../img/DrinksandLiquor/querico/5.jpg"
+     }]
+},{
+    "title": "Bourbon St Bistro",
+    "menu_id": "4",
+    "logo": "../img/DrinksandLiquor/bourbon/bourbon.jpg",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/DrinksandLiquor/bourbon/1.jpg"
+        },{
+        "src": "../img/DrinksandLiquor/bourbon/2.jpg"
+        },{
+        "src": ".../img/DrinksandLiquor/bourbon/3.jpg"
+        },{
+        "src": "../img/DrinksandLiquor/bourbon/4.jpg"
+        },{
+        "src": "../img/DrinksandLiquor/bourbon/5.jpg"
      }]
 }
 ]

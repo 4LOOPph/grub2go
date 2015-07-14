@@ -2,24 +2,16 @@
   <ion-content>
           <div class="list">
 
-            <div class="item item-input-inset">
-            <label class="item-input-wrapper">
-              <input type="text" placeholder="seach" ng-model="searchh">
-            </label>
-            <button ng-click="printSerched()" class="button button-small">
-              Submit
-            </button>
+            <div class="list list-inset">
+              <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input type="text" placeholder="Search" ng-model="title">
+              </label>
             </div>
 
           </div>
-          <br>
-          <!-- <ion-list>
-              <ion-item ng-repeat="companyname in companynames">
-                  {{companyname.title}}
-              </ion-item>
-          </ion-list> -->
           <div class="list">
-                  <a ng-repeat="companyname in companynames" href="#/app/details/{{companyname.menu_id}}/{{$index}}" class="item item-thumbnail-left item-icon-right">
+                  <a ng-repeat="companyname in dat | filter: title" href="#/app/details/{{dat.menu_id}}/{{$index}}" class="item item-thumbnail-left item-icon-right">
                       <img ng-src="{{companyname.logo}}">
                       <h2>{{companyname.title}}</h2>
                       <h4>{{companyname.desc}}</h4>
