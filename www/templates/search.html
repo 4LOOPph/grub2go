@@ -1,5 +1,30 @@
 <ion-view view-title="Search">
   <ion-content>
-    <h1>Search 555555555555</h1>
+          <div class="list">
+
+            <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+              <input type="text" placeholder="seach" ng-model="searchh">
+            </label>
+            <button ng-click="printSerched()" class="button button-small">
+              Submit
+            </button>
+            </div>
+
+          </div>
+          <br>
+          <!-- <ion-list>
+              <ion-item ng-repeat="companyname in companynames">
+                  {{companyname.title}}
+              </ion-item>
+          </ion-list> -->
+          <div class="list">
+                  <a ng-repeat="companyname in companynames" href="#/app/details/{{companyname.menu_id}}/{{$index}}" class="item item-thumbnail-left item-icon-right">
+                      <img ng-src="{{companyname.logo}}">
+                      <h2>{{companyname.title}}</h2>
+                      <h4>{{companyname.desc}}</h4>
+                      <i class="icon ion-ios-arrow-right"></i>
+                  </a>
+          </div>
   </ion-content>
 </ion-view>

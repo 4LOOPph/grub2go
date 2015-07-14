@@ -1,7 +1,7 @@
 [{
-    "title": "fast food 1",
+    "title": "Mcdonald",
     "menu_id": "1",
-    "logo": "../img/jollibeelogo.jpg",
+    "logo": "../img/fastfoods/Mcdonalds/mcdonalds.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
 
     "Location": "company-location",
@@ -12,18 +12,20 @@
     },
     "Phone": "788-0034",
     "images": [{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/fastfoods/Mcdonalds/1.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/fastfoods/Mcdonalds/2.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/fastfoods/Mcdonalds/3.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
-    }]
+        "src": "../img/fastfoods/Mcdonalds/4.jpg"
+        },{
+        "src": "../img/fastfoods/Mcdonalds/5.jpg"
+        }]
 },{
-    "title": "fast food 2",
+    "title": "Jolibee",
     "menu_id": "1",
-    "logo": "../img/jollibeelogo.jpg",
+    "logo": "../img/fastfoods/jollibee/jollibee.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed ",
 
     "Location": "company-location",
@@ -34,18 +36,20 @@
     },
     "Phone": "788-0034",
     "images": [{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/fastfoods/jollibee/1.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/fastfoods/jollibee/2.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/fastfoods/jollibee/3.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
-    }]
+        "src": "../img/fastfoods/jollibee/4.jpg"
+        },{
+        "src": "../img/fastfoods/jollibee/5.jpg"
+        }]
 },{
-    "title": "Max Y. Suniel St",
-    "menu_id": "2",
-    "logo": "../img/jollibeelogo.jpg",
+    "title": "KFC",
+    "menu_id": "1",
+    "logo": "../img/fastfoods/kfc/kfc.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur",
 
     "Location": "company-location",
@@ -56,18 +60,20 @@
     },
     "Phone": "788-0034",
     "images": [{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/fastfoods/kfc/1.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/fastfoods/kfc/2.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/fastfoods/kfc/3.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
-    }]
+        "src": "../img/fastfoods/kfc/4.jpg"
+        },{
+        "src": "../img/fastfoods/kfc/5.jpg"
+        }]
 },{
-    "title": "Max Y. Suniel St",
+    "title": "restaurant1",
     "menu_id": "2",
-    "logo": "../img/jollibeelogo.jpg",
+    "logo": "../img/restaurant/restaurant1/restaurant1.png",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
     "Location": "company-location",
@@ -78,13 +84,63 @@
     },
     "Phone": "788-0034",
     "images": [{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/restaurant/restaurant1/1.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/restaurant/restaurant1/2.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
+        "src": "../img/restaurant/restaurant1/3.jpg"
         },{
-        "src": "../img/jollibeelogo.jpg"
-    }]
+        "src": "../img/restaurant/restaurant1/4.jpg"
+        },{
+        "src": "../img/restaurant/restaurant1/5.jpg"
+        }]
+},{
+    "title": "restaurant2",
+    "menu_id": "2",
+    "logo": "../img/restaurant/restaurant2/restaurant2.png",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/restaurant/restaurant2/1.jpg"
+        },{
+        "src": "../img/restaurant/restaurant2/2.jpg"
+        },{
+        "src": "../img/restaurant/restaurant2/3.jpg"
+        },{
+        "src": "../img/restaurant/restaurant2/4.jpg"
+        },{
+        "src": "../img/restaurant/restaurant2/5.jpg"
+        }]
+},{
+    "title": "restaurant3",
+    "menu_id": "2",
+    "logo": "../img/restaurant/restaurant3/restaurant3.png",
+    "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
+
+    "Location": "company-location",
+    "coords": {
+        "latitude":"",
+        "longitude":""
+
+    },
+    "Phone": "788-0034",
+    "images": [{
+        "src": "../img/restaurant/restaurant3/1.jpg"
+        },{
+        "src": "../img/restaurant/restaurant3/2.jpg"
+        },{
+        "src": "../img/restaurant/restaurant3/3.jpg"
+        },{
+        "src": "../img/restaurant/restaurant3/4.jpg"
+        },{
+        "src": "../img/restaurant/restaurant3/5.jpg"
+     }]
 }
 ]

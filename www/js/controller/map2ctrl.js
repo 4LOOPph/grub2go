@@ -2,11 +2,6 @@
 
 angular.module('starter')
     .controller('Map2Ctrl', function($scope,DataFactory) {
-        DataFactory.Map2().then(function(data){
-        	$scope.map2 = data.data;
-        	$scope.map2src = $scope.map2[0].map;
-            console.log('map2 data: ',data.data);
-        });
         $scope.myLocation = {
 		    lng :'',
 		    lat: ''

@@ -1,15 +1,15 @@
-<ion-view view-title="Restau Name">
+<ion-view view-title="Details">
     <ion-content>
         <ion-slide-box active-slide="myActiveSlide">
-            <ion-slide ng-repeat="photo in photoarray">
+            <ion-slide ng-repeat="photo in details.images">
                 <div class="box">
-                    <img class="full-image" ng-src="{{photo}}">
+                    <img class="full-image" ng-src="{{photo.src}}">
                 </div>
             </ion-slide>
         </ion-slide-box>
         <div class="list card">
             <div class="item item-avatar">
-                <img src="../img/jollibeelogo.jpg">
+                <img src="{{details.logo}}">
                 <h2>{{Location}} </h2>
                 <p>{{Phone}}</p>
             </div>
@@ -21,10 +21,10 @@
                         </div>
                     </ion-slide>
                 </ion-slide-box>
-                <p ng-bind="{{details}}">
-                <p>
-                    <a href="#" class="subdued">{{numoflikes}} Like</a>
-                    <a href="#" class="subdued">{{numofcomments}} Comments</a>
+                <p>{{details.details}}
+                </p>
+                    <a href="#" class="subdued">1024K{{numoflikes}} Likes</a>
+                    <a href="#" class="subdued">512k{{numofcomments}} Comments</a>
                 </p>
             </div>
             <div class="item tabs tabs-secondary tabs-icon-left">

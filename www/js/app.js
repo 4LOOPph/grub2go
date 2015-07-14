@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('starter', ['ionic', 'starter.controllers', 'uiGmapgoogle-maps', 'ngRoute'])
+angular.module('starter', ['ionic', 'starter.controllers', 'uiGmapgoogle-maps', 'ngRoute', 'ngCordova'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -25,7 +25,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'uiGmapgoogle-maps', 
             url: "/search",
             views: {
                 'menuContent': {
-                    templateUrl: "templates/search.html"
+                    templateUrl: "templates/search.html",
+                    controller: 'SearchCtrl'
                 }
             }
         })

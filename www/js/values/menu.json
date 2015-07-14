@@ -1,26 +1,26 @@
 [{
     "title": "Fast Food",
     "id": "1",
-    "logo": "../img/goldencowre.jpg",
+    "logo": "../img/fastfoods/logo.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
-    "title": "wew",
+    "title": "Restaurant",
     "id": "2",
-    "logo": "../img/candyscafe.jpg",
+    "logo": "../img/restaurant/logo.png",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
-    "title": "Bigby's Cafe and Restaurant",
+    "title": "Pizza",
     "id": "3",
-    "logo": "../img/bigbys.jpg",
+    "logo": "../img/pizza/logo.png",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
-    "title": "Chub's Diner",
+    "title": "Drinks and Liquor",
     "id": "4",
-    "logo": "../img/chubs.jpg",
+    "logo": "../img/DrinksandLiquor/logo.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
-    "title": "Misto",
+    "title": "Coffee and Tea",
     "id": "5",
-    "logo": "../img/misto.jpg",
+    "logo": "../img/coffeeandtea/logo.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }]
