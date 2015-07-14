@@ -1,9 +1,19 @@
 'use strict';
 
 angular.module('starter')
-    .controller('MenusCtrl', function($scope,DataFactory) {
-        DataFactory.Menu().then(function(data){
-            $scope.menus = data.data;
-            console.log('menu data: ',$scope.menus);
-        });
+    .controller('MenusCtrl', function($scope, DataFactory) {
+
+    	$scope.changeStyle = function(){
+    		$scope.isList = ($scope.isList == true) ? false : true;
+    	};
+
+        function init() {
+        	$scope.isList = ($scope.isList == true) ? false : true;
+
+            DataFactory.Menu().then(function(data) {
+                $scope.menus = data.data;
+            });
+        }
+
+        init();
     });

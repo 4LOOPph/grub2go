@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('starter', ['ionic', 'starter.controllers', 'uiGmapgoogle-maps', 'ngRoute', 'ngCordova'])
+angular.module('starter', ['ionic','uiGmapgoogle-maps','dbaq.google.directions', 'ngRoute', 'ngCordova'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -30,11 +30,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'uiGmapgoogle-maps', 
                 }
             }
         })
-        .state('app.browse', {
-            url: "/browse",
+        .state('app.about', {
+            url: "/about",
             views: {
                 'menuContent': {
-                    templateUrl: "templates/browse.html"
+                    templateUrl: "templates/about.html"
                 }
             }
         })
@@ -75,7 +75,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'uiGmapgoogle-maps', 
             }
         })
         .state('app.map2', {
-            url: "/map2/:param",
+            url: "/map2",
             views: {
                 'menuContent': {
                     templateUrl: "templates/map2.html",

@@ -1,4 +1,5 @@
 /* Empty. Add your own CSS if you like */
+
 .angular-google-map-container {
     position: absolute;
     top: 0;
@@ -24,9 +25,100 @@
 .scroll {
     height: 100%;
 }
- 
+
 #map {
     width: 100%;
     height: 100%;
 }
 
+.card div img.topics-img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: 10px auto;
+}
+
+.topics-page-card {
+    padding: 0!important;
+    margin: 0!important
+}
+
+.topic-name-topic {
+    background-color: #ECF0F1;
+    height: 60px;
+    width: 100%;
+    padding: 11px 20px 11px 5px;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+}
+
+div.topic-name-topic p {
+    font-size: 12px;
+    padding-top: 12px;
+    padding-left: 10px;
+    display: inline;
+    color: #502020;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+div.topic-name-topic i {
+    float: right;
+    color: #727272
+}
+
+.gallery {
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.card,
+.list-inset {
+    overflow: hidden;
+    margin: 0px !important;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.bar.bar-g2g {
+    /*border-color: #F39C12;*/
+
+    border-bottom: 3px solid #F39C12;
+    background-color: #F1C40F;
+    background-image: linear-gradient(0deg, #F1C40F, #F1C40F 50%, transparent 50%);
+    color: #502020;
+}
+
+.bar.bar-g2g .title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.bar.bar-g2g .button-clear,
+.bar.bar-g2g .button-icon {
+    border-color: transparent;
+    background: none;
+    box-shadow: none;
+    color: #502020;
+}
+
+.menu .item {
+    height: 70px;
+    background-color: #502020;
+    border-color: transparent;
+}
+
+.menu .item-complex .item-content,
+.menu .item-radio .item-content {
+    background-color: #502020;
+}
+
+.menu .item .item-content.activated {
+    border-color: transparent;
+    background-color: #502020;
+}
+
+.gray-bg {
+    background-color: #502020;
+}

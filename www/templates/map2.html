@@ -1,16 +1,17 @@
 <ion-view view-title="Location">
+    <div class="bar bar-subheader bar-stable item-input-inset">
+        <div class="button-bar">
+            <a class="button icon {{button.icon}}" ng-repeat="button in filters" ng-click="eventButton(button.name)" ng-class="{'button-balanced' : button.name === data.clientSide}"></a>
+        </div>
+    </div>
     <ion-content>
-      <div id="map_canvas">
-        <ui-gmap-google-map center='map.center' zoom='map.zoom' events="map.markersEvents">
-          <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id" closeClick="hideMarkerPopup()" onClicked="showMarkerPopup()">
-          </ui-gmap-marker>        
-        </ui-gmap-google-map>
-      </div>
-    </ion-content> 
-		<div class="bar bar-footer bar-dark">
-		   <div class="title item-icon-left">
-		   	<i class="icon ion-navigate"></i>
-		   </div>
-		 </div>
-    
+        <div id="map_canvas">
+            <ui-gmap-google-map control="map.control" center="map.center" zoom="map.zoom" draggable="false" options="options">
+                <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id"></ui-gmap-marker>
+            </ui-gmap-google-map>
+        </div>
+    </ion-content>
+    <div class="bar bar-footer bar-g2g">
+        <a ng-click="centerOnMe(currentlocation.lat,currentlocation.long)" class="button button-icon icon ion-navigate">
+    </div>
 </ion-view>

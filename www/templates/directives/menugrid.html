@@ -1,0 +1,14 @@
+<div class="row gallery">
+    <div class="col col-50" ng-repeat="menu in menus">
+        <div class="card">
+            <div>
+                <a ng-href="#/app/submenu/{{menu.id}}">
+                    <img class="topics-img" ng-src="{{menu.logo}}">
+                </a>
+            </div>
+            <div class="topic-name-topic">
+                <p>{{menu.title}}</p>
+            </div>
+        </div>
+    </div>
+</div>

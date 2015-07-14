@@ -1,4 +1,4 @@
-<ion-view view-title="Details">
+<ion-view view-title="{{}}">
     <ion-content>
         <ion-slide-box active-slide="myActiveSlide">
             <ion-slide ng-repeat="photo in detalye.images">
@@ -13,40 +13,20 @@
                 <h2>{{Location}} </h2>
                 <p>{{Phone}}</p>
             </div>
-            <div class="item item-body" animation="slide-left-right-ios7">
-                <ion-slide-box active-slide="myActiveSlide">
-                    <ion-slide ng-repeat="photo in detalye">
-                        <div class="box">
-                            <img class="full-image" ng-src="{{photo.src}}">
-                        </div>
-                    </ion-slide>
-                </ion-slide-box>
+            <div class="item item-body">
                 <p>
-                  {{detalye.details}}
-               </p>
+                    {{detalye.details}}
+                </p>
                 <p>
                     {{detalye.details}}
                     <a href="#" class="subdued">1000k Like</a>
                     <a href="#" class="subdued">200k Comments</a>
                 </p>
-              </div>
-            <div class="item tabs tabs-secondary tabs-icon-left">
-                <a class="tab-item" href="#">
-                    <i class="icon ion-thumbsup"></i> Like
-                </a>
-                <a class="tab-item" href="#">
-                    <i class="icon ion-chatbox"></i> Comment
-                </a>
-                <a class="tab-item" href="#">
-                    <i class="icon ion-share"></i> Share
-                </a>
             </div>
         </div>
-        <div style="padding:0px 8px 0px 8px">
+        <div class="padding">
             <a href="tel:{{Phone}}" class="button button-block icon-right icon ion-ios-telephone-outline button-assertive">Call</a>
-        </div>
-        <div style="padding:0px 8px 0px 8px">
-            <a href="#/app/map2/{{}}" class="button button-block icon-right icon ion-ios-location-outline button-balanced">Map</a>
+            <a href="#/app/map2" class="button button-block icon-right icon ion-ios-location-outline button-balanced">Map</a>
         </div>
     </ion-content>
 </ion-view>

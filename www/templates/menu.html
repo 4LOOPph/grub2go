@@ -1,6 +1,6 @@
 <ion-side-menus enable-menu-with-back-views="false">
     <ion-side-menu-content>
-        <ion-nav-bar class="bar bar-header bar-royal">
+        <ion-nav-bar class="bar bar-header bar-g2g">
             <ion-nav-back-button class="button button-clear icon-left ion-chevron-left">
             </ion-nav-back-button>
             <ion-nav-buttons side="left">
@@ -11,23 +11,19 @@
         <ion-nav-view name="menuContent">
         </ion-nav-view>
     </ion-side-menu-content>
-    <ion-side-menu side="left" style="width: 150px; z-index: 0;">
-        <ion-header-bar class="bar-royal">
-            <h1 class="title">Settings</h1>
+    <ion-side-menu side="left"  width="90">
+        <ion-header-bar class="bar-g2g">
         </ion-header-bar>
-        <ion-content>
+        <ion-content class="gray-bg">
             <ion-list>
-                <ion-item menu-close ng-click="login()" class="item-icon-left">
-                    <i class="icon ion-log-in"></i>Login
+                <ion-item menu-close href="#/app/menus">
+                    <i class="fa fa-home fa-3x balanced"></i>
                 </ion-item>
-                <ion-item menu-close href="#/app/search" class="item-icon-left">
-                    <i class="icon ion-ios-search"></i>Search
+                <ion-item menu-close href="#/app/search">
+                    <i class="fa fa-search fa-3x assertive"></i>
                 </ion-item>
-                <ion-item menu-close href="#/app/browse" class="item-icon-left">
-                    <i class="icon ion-ios-browsers-outline"></i>Browse
-                </ion-item>
-                <ion-item menu-close href="#/app/menus" class="item-icon-left">
-                    <i class="icon ion-navicon"></i>Menus
+                <ion-item menu-close href="#/app/about">
+                    <i class="fa fa-question-circle fa-3x energized"></i>
                 </ion-item>
             </ion-list>
         </ion-content>

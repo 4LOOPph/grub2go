@@ -1,22 +1,19 @@
 <ion-view view-title="Search">
-  <ion-content>
-          <div class="list">
-
-            <div class="list list-inset">
-              <label class="item item-input">
-                <i class="icon ion-search placeholder-icon"></i>
-                <input type="text" placeholder="Search" ng-model="title">
-              </label>
-            </div>
-
-          </div>
-          <div class="list">
-                  <a ng-repeat="companyname in dat | filter: title" href="#/app/details/{{dat.menu_id}}/{{$index}}" class="item item-thumbnail-left item-icon-right">
-                      <img ng-src="{{companyname.logo}}">
-                      <h2>{{companyname.title}}</h2>
-                      <h4>{{companyname.desc}}</h4>
-                      <i class="icon ion-ios-arrow-right"></i>
-                  </a>
-          </div>
-  </ion-content>
+    <div class="bar bar-subheader energized-bg item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="ion-android-search placeholder-icon"></i>
+            <input id="searchKey" type="search" placeholder="Search" ng-model="searchText" autocorrect="off">
+            <button class="button button-clear" ng-click="clearSearch()" style="z-index:1024;">X</button>
+        </label>
+    </div>
+    <ion-content class="has-subheader">
+        <div class="list">
+            <a ng-repeat="companyname in dat | filter: title" href="#/app/details/{{dat.menu_id}}/{{$index}}" class="item item-thumbnail-left item-icon-right">
+                <img ng-src="{{companyname.logo}}">
+                <h2>{{companyname.title}}</h2>
+                <h4>{{companyname.desc}}</h4>
+                <i class="icon ion-ios-arrow-right"></i>
+            </a>
+        </div>
+    </ion-content>
 </ion-view>

@@ -1,44 +1,127 @@
 'use strict';
 
 angular.module('starter')
-    .controller('Map2Ctrl', function($scope,DataFactory) {
-        $scope.myLocation = {
-		    lng :'',
-		    lat: ''
-		  }
+    .controller('Map2Ctrl', function($scope, $stateParams, uiGmapGoogleMapApi, googleDirections, $cordovaGeolocation, DataFactory) {
+        var directionsDisplay = new google.maps.DirectionsRenderer();
 
-		  $scope.drawMap = function(position) {
+        var slat = $stateParams.lat;
+        var slong = $stateParams.lng;
 
-		    //$scope.$apply is needed to trigger the digest cycle when the geolocation arrives and to update all the watchers
-		    $scope.$apply(function() {
-		      $scope.myLocation.lng = position.coords.longitude;
-		      $scope.myLocation.lat = position.coords.latitude;
+        $scope.eventButton = function(value) {
+            $scope.data.clientSide = value;
+            $scope.centerOnMe(value, slat, slong);
+        };
 
-		      $scope.map = {
-		        center: {
-		          latitude: $scope.myLocation.lat,
-		          longitude: $scope.myLocation.lng
-		        },
-		        zoom: 14,
-		        pan: 1
-		      };
+        $scope.centerOnMe = function(value, latitude, longitude) {
+            // Clear Map before rendering to a new route
+            if (directionsDisplay != null) {
+                directionsDisplay.setMap(null);
+                directionsDisplay = null;
+            }
 
-		      $scope.marker = {
-		        id: 0,
-		        coords: {
-		          latitude: $scope.myLocation.lat,
-		          longitude: $scope.myLocation.lng
-		        }
-		      };
+            var posOptions = {
+                timeout: 10000,
+                enableHighAccuracy: false
+            };
 
-		      $scope.marker.options = {
-		        draggable: false,
-		        labelContent: "lat: " + $scope.marker.coords.latitude + '<br/> ' + 'lon: ' + $scope.marker.coords.longitude,
-		        labelAnchor: "80 120",
-		        labelClass: "marker-labels"
-		      };
-		    });
-		  }
+            directionsDisplay = new google.maps.DirectionsRenderer();
 
-		  navigator.geolocation.getCurrentPosition($scope.drawMap);
+            $cordovaGeolocation
+                .getCurrentPosition(posOptions)
+                .then(function(position) {
+
+                    /*$scope.directions = {
+                        origin: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                        destination: new google.maps.LatLng(slat, slong)
+                    };*/
+
+                    $scope.directions = {
+                        origin: new google.maps.LatLng('37.7738571', '-122.4102823'),
+                        destination: new google.maps.LatLng('37.7891231', '-122.4173545')
+                    };
+
+                    var request = {
+                        origin: $scope.directions.origin,
+                        destination: $scope.directions.destination,
+                        travelMode: value,
+                        optimizeWaypoints: true,
+                        provideRouteAlternatives: true
+                    }
+
+                    console.log('directions: ', $scope.directions);
+                    console.log('request: ', request);
+
+                    googleDirections.getDirections(request).then(function(directions) {
+                        directionsDisplay.setDirections(directions);
+                        directionsDisplay.setMap($scope.map.control.getGMap());
+                        directionsDisplay.setPanel(document.getElementById('directionsList'));
+                    });
+
+                }, function(err) {
+                    console.log('$cordovaGeolocation.getCurrentPosition ERROR: ', err);
+                });
+        };
+
+
+        function init() {
+            $scope.map = {};
+            $scope.filterSelected = {};
+            $scope.marker = {};
+            $scope.enableFind = false;
+
+            $scope.currentlocation = {
+                lat: "",
+                long: ""
+            };
+
+            $scope.options = {
+                scrollwheel: false
+            };
+
+            $scope.filters = [{
+                'name': 'driving',
+                'value': 'google.maps.TravelMode.DRIVING',
+                'icon': 'ion-android-car'
+            }, {
+                'name': 'bicycling',
+                'value': 'google.maps.TravelMode.BICYCLING',
+                'icon': 'ion-android-bicycle'
+            }, {
+                'name': 'transit',
+                'value': 'google.maps.TravelMode.TRANSIT',
+                'icon': 'ion-android-bus'
+            }, {
+                'name': 'walking',
+                'value': 'google.maps.TravelMode.WALKING',
+                'icon': 'ion-android-walk'
+            }];
+
+            $scope.data = {
+                clientSide: 'driving'
+            };
+
+            uiGmapGoogleMapApi.then(function(maps) {
+                $scope.map = {
+                    control: {},
+                    center: {
+                        latitude: '37.7738571',
+                        longitude: '-122.4102823'
+                    },
+                    zoom: 14
+                };
+
+                $scope.marker = {
+                    id: 0,
+                    coords: {
+                        latitude: '37.7738571',
+                        longitude: '-122.4102823'
+                    }
+                };
+
+                $scope.enableFind = true;
+            });
+        }
+
+
+        init();
     });
