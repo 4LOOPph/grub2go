@@ -11,5 +11,5 @@ angular.module('starter')
         	$scope.submenus = submenus;
         	console.log(submenus);
         });
-        
+
     });

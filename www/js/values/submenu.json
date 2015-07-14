@@ -1,4 +1,5 @@
 [{
+    "id":"1",
     "title": "Mcdonald",
     "menu_id": "1",
     "logo": "../img/fastfoods/Mcdonalds/mcdonalds.jpg",
@@ -23,6 +24,7 @@
         "src": "../img/fastfoods/Mcdonalds/5.jpg"
         }]
 },{
+    "id":"2",
     "title": "Jolibee",
     "menu_id": "1",
     "logo": "../img/fastfoods/jollibee/jollibee.jpg",
@@ -47,7 +49,8 @@
         "src": "../img/fastfoods/jollibee/5.jpg"
         }]
 },{
-    "title": "KFC",
+   "id":"3",
+   "title": "KFC",
     "menu_id": "1",
     "logo": "../img/fastfoods/kfc/kfc.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur",
@@ -71,6 +74,7 @@
         "src": "../img/fastfoods/kfc/5.jpg"
         }]
 },{
+    "id":"4",
     "title": "Kagay-anon",
     "menu_id": "2",
     "logo": "../img/restaurant/cagayanon/cagayanon.jpg",
@@ -95,6 +99,7 @@
         "src": "../img/restaurant/cagayanon/5.jpg"
         }]
 },{
+    "id":"5",
     "title": "Circa",
     "menu_id": "2",
     "logo": "../img/restaurant/circa/circa.jpg",
@@ -121,6 +126,7 @@
         "src": "../img/restaurant/circa/6.jpg"
         }]
 },{
+    "id":"6",
     "title": "Sentro",
     "menu_id": "2",
     "logo": "../img/restaurant/sentro/sentro.jpg",
@@ -145,6 +151,7 @@
         "src": "../img/restaurant/sentro/5.jpg"
      }]
 },{
+    "id":"7",
     "title": "Albertos",
     "menu_id": "3",
     "logo": "../img/pizza/albertos/albertos.jpg",
@@ -169,6 +176,7 @@
         "src": "../img/pizza/albertos/5.jpg"
      }]
 },{
+    "id":"8",
     "title": "Big Flat Bread",
     "menu_id": "3",
     "logo": "../img/pizza/bigflatbread/bigflatbread.jpg",
@@ -193,6 +201,7 @@
         "src": "../img/pizza/bigflatbread/5.jpg"
      }]
 },{
+    "id":"9",
     "title": "Calda Pizza",
     "menu_id": "3",
     "logo": "../img/pizza/caldapizza/caldapizza.jpg",
@@ -217,6 +226,7 @@
         "src": "../img/pizza/caldapizza/5.jpg"
      }]
 },{
+    "id":"10",
     "title": "Starbucks",
     "menu_id": "5",
     "logo": "../img/coffeeandtea/starbucks/starbucks.jpg",
@@ -241,6 +251,7 @@
         "src": "../img/coffeeandtea/starbucks/5.jpg"
      }]
 },{
+    "id":"11",
     "title": "Bo's Coffee",
     "menu_id": "5",
     "logo": "../img/coffeeandtea/boscoffee/boscoffee.jpg",
@@ -265,6 +276,7 @@
         "src": "../img/coffeeandtea/boscoffee/5.jpg"
      }]
 },{
+    "id":"12",
     "title": "Blugre",
     "menu_id": "5",
     "logo": "../img/coffeeandtea/blugre/blugre.jpg",
@@ -287,14 +299,9 @@
         "src": "../img/coffeeandtea/blugre/4.jpg"
         },{
         "src": "../img/coffeeandtea/blugre/5.jpg"
-         },{
-         "src": "../img/coffeeandtea/blugre/6.jpg"
-         },{
-         "src": "../img/coffeeandtea/blugre/7.jpg"
-         },{
-         "src": "../img/coffeeandtea/blugre/8.jpg"
-      }]
+        }]
 },{
+    "id":"13",
     "title": "Que Rico",
     "menu_id": "4",
     "logo": "../img/DrinksandLiquor/querico/querico.jpg",
@@ -319,6 +326,7 @@
         "src": "../img/DrinksandLiquor/querico/5.jpg"
      }]
 },{
+    "id":"14",
     "title": "Bourbon St Bistro",
     "menu_id": "4",
     "logo": "../img/DrinksandLiquor/bourbon/bourbon.jpg",
@@ -336,7 +344,7 @@
         },{
         "src": "../img/DrinksandLiquor/bourbon/2.jpg"
         },{
-        "src": ".../img/DrinksandLiquor/bourbon/3.jpg"
+        "src": "../img/DrinksandLiquor/bourbon/3.jpg"
         },{
         "src": "../img/DrinksandLiquor/bourbon/4.jpg"
         },{
