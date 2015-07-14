@@ -1,0 +1,11 @@
+{
+  "name": "js",
+  "_cacheHeaders": {
+    "Content-Type": "text/javascript; charset=UTF-8"
+  },
+  "main": "index",
+  "_source": "http://maps.googleapis.com/maps/api/js",
+  "_target": "*",
+  "_originalSource": "http://maps.googleapis.com/maps/api/js",
+  "_direct": true
+}

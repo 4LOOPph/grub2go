@@ -1,26 +1,26 @@
 [{
     "title": "Fast Food",
-    "menu_id": "1",
-    "logo": "../img/fastfoods/logo.jpg",
+    "id": "1",
+    "logo": "img/fastfoods/logo.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
     "title": "Restaurant",
-    "menu_id": "2",
-    "logo": "../img/restaurant/logo.png",
+    "id": "2",
+    "logo": "img/restaurant/logo.png",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
     "title": "Pizza",
-    "menu_id": "3",
-    "logo": "../img/pizza/logo.png",
+    "id": "3",
+    "logo": "img/pizza/logo.png",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
     "title": "Drinks and Liquor",
-    "menu_id": "4",
-    "logo": "../img/DrinksandLiquor/logo.jpg",
+    "id": "4",
+    "logo": "img/DrinksandLiquor/logo.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
     "title": "Coffee and Tea",
-    "menu_id": "5",
-    "logo": "../img/coffeeandtea/logo.jpg",
+    "id": "5",
+    "logo": "img/coffeeandtea/logo.jpg",
     "desc": "dsaoreuh 24iudhf 4"
 }]
