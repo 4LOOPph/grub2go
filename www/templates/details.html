@@ -18,14 +18,14 @@
                     {{detalye.details}}
                 </p>
                 <p>
-                    <a href="#" class="subdued">1000k Like</a>
+                    <a href="#" class="subdued">1000k Likes</a>
                     <a href="#" class="subdued">200k Comments</a>
                 </p>
             </div>
         </div>
         <div class="padding">
-            <a href="tel:{{Phone}}" class="button button-block icon-right icon ion-ios-telephone-outline button-assertive">Call</a>
-            <a href="#/app/map2" class="button button-block icon-right icon ion-ios-location-outline button-balanced">Map</a>
+            <a href="tel:{{det.Phone}}" class="button button-block icon-right icon ion-ios-telephone-outline button-assertive">Call</a>
+            <a ng-show="isConnected" href="#/app/map2" class="button button-block icon-right icon ion-ios-location-outline button-balanced">Map</a>
         </div>
     </ion-content>
 </ion-view>

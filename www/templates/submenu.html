@@ -1,21 +1,21 @@
 <ion-view view-title="">
-    <ion-nav-buttons side="secondary">
-        <button ng-click="setFocus()" ng-hide="hasFocus" class="button button-icon ion-ios-search-strong light"></button>
-        <span ng-show="hasFocus" class="item-input-inset">
-            <label class="item-input-wrapper">
-              <i class="icon ion-ios-search placeholder-icon"></i>
-              <input ng-blur="noFocus()" ng-model="searchText" autocorrect="off" type="search" placeholder="Search">
-            </label>
-            <button ng-click="noFocus()" class="button button-clear ion-close light"></button>
-        </span>
-    </ion-nav-buttons>
+  <ion-nav-buttons side="secondary">
+      <button ng-click="setFocus()" ng-hide="hasFocus" class="button button-icon ion-ios-search-strong light"></button>
+      <span ng-show="hasFocus" class="item-input-inset">
+          <label class="item-input-wrapper">
+            <i class="icon ion-ios-search placeholder-icon"></i>
+            <input ng-blur="noFocus()" ng-model="$parent.searchText" autocorrect="off" type="search" placeholder="Search">
+          </label>
+          <button ng-click="noFocus()" class="button button-clear ion-close light"></button>
+      </span>
+  </ion-nav-buttons>
     <ion-content>
         <ion-refresher pulling-icon="ion-arrow-down-c" on-refresh="doRefresh()"></ion-refresher>
         <ion-list show-delete="false" show-reorder="false" can-swipe="true">
             <ion-item  ng-repeat="submenu in submenus | filter:searchText | limitTo:querylimit" href="#/app/details/{{submenu.u_id}}" class="item item-thumbnail-left item-icon-right">
                 <img ng-src="{{submenu.logo}}">
                 <h2>{{submenu.title}}</h2>
-                <h4>{{submenu.location}}</h4>
+                <h4>{{submenu.Location}}</h4>
                 <i class="icon ion-ios-arrow-right"></i>
                 <ion-option-button class="button-assertive icon ion-ios-telephone-outline"></ion-option-button>
                 <ion-option-button class="button-balanced icon ion-ios-location-outline"></ion-option-button>

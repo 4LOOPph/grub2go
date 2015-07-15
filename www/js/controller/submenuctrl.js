@@ -4,6 +4,7 @@ angular.module('starter')
     .controller('SubmenuCtrl', function($scope, $stateParams, $filter, DataFactory) {
 
         $scope.clearSearch = function() {
+            console.log('weeeew');
             $scope.searchText = "";
             $scope.doRefresh();
         }
@@ -11,7 +12,6 @@ angular.module('starter')
         $scope.setFocus = function() {
             console.log('message');
             $scope.hasFocus = true;
-            //$scope.searchText = "";
         };
 
         $scope.noFocus = function() {
@@ -19,7 +19,7 @@ angular.module('starter')
             $scope.hasFocus = false;
             $scope.searchText = "";
         };
-
+          
         function init() {
             $scope.searchText = "";
             $scope.hasFocus = false;

@@ -5,13 +5,13 @@
     "logo": "img/fastfoods/Mcdonalds/mcdonalds.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
 
-    "Location": "company-location",
+    "Location": "Corrales Avenue corner",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "856 6236",
     "images": [{
         "src": "img/fastfoods/Mcdonalds/1.jpg"
         },{
@@ -30,13 +30,13 @@
     "logo": "img/fastfoods/jollibee/jollibee.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed ",
 
-    "Location": "company-location",
+    "Location": "Max Y. Suniel St",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "727786",
     "images": [{
         "src": "img/fastfoods/jollibee/1.jpg"
         },{
@@ -55,13 +55,13 @@
     "logo": "img/fastfoods/kfc/kfc.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur",
 
-    "Location": "company-location",
+    "Location": "Corrales Avenue",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "869 1142",
     "images": [{
         "src": "img/fastfoods/kfc/1.jpg"
         },{
@@ -80,13 +80,13 @@
     "logo": "img/restaurant/cagayanon/cagayanon.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "Rosario Cres",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "729003",
     "images": [{
         "src": "img/restaurant/cagayanon/1.png"
         },{
@@ -105,13 +105,13 @@
     "logo": "img/restaurant/circa/circa.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "Claro M. Recto Ave",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "852 1850",
     "images": [{
         "src": "img/restaurant/circa/1.jpg"
         },{
@@ -132,13 +132,13 @@
     "logo": "img/restaurant/sentro/sentro.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "Don Apolinar Velez",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "854 1850",
     "images": [{
         "src": "img/restaurant/sentro/1.jpg"
         },{
@@ -157,13 +157,13 @@
     "logo": "img/pizza/albertos/albertos.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "Toribio Chavez Street",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "222 3125",
     "images": [{
         "src": "img/pizza/albertos/1.jpg"
         },{
@@ -182,7 +182,7 @@
     "logo": "img/pizza/bigflatbread/bigflatbread.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "J. Ebarle Street Corner",
     "coords": {
         "latitude":"",
         "longitude":""
@@ -207,13 +207,13 @@
     "logo": "img/pizza/caldapizza/caldapizza.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "Claro M. Recto Ave",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "309 3799",
     "images": [{
         "src": "img/pizza/caldapizza/1.jpg"
         },{
@@ -232,13 +232,13 @@
     "logo": "img/coffeeandtea/starbucks/starbucks.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "Rosario Limketkai Ave",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "852 1506",
     "images": [{
         "src": "img/coffeeandtea/starbucks/1.jpg"
         },{
@@ -257,13 +257,13 @@
     "logo": "img/coffeeandtea/boscoffee/boscoffee.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "Florentino Street, Limketkai ",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "856 7773",
     "images": [{
         "src": "img/coffeeandtea/boscoffee/1.jpg"
         },{
@@ -282,13 +282,13 @@
     "logo": "img/coffeeandtea/blugre/blugre.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "Matina Town Square",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "297 7431",
     "images": [{
         "src": "img/coffeeandtea/blugre/1.jpg"
         },{
@@ -307,13 +307,13 @@
     "logo": "img/DrinksandLiquor/querico/querico.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "Justo Ramonal St",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "0917 793 5577",
     "images": [{
         "src": "img/DrinksandLiquor/querico/1.jpg"
         },{
@@ -332,13 +332,13 @@
     "logo": "img/DrinksandLiquor/bourbon/bourbon.jpg",
     "details": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt u",
 
-    "Location": "company-location",
+    "Location": "J.R. Borja Extension",
     "coords": {
         "latitude":"",
         "longitude":""
 
     },
-    "Phone": "788-0034",
+    "Phone": "880 7339",
     "images": [{
         "src": "img/DrinksandLiquor/bourbon/1.jpg"
         },{

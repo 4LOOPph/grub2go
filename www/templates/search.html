@@ -2,7 +2,7 @@
     <div class="bar bar-subheader energized-bg item-input-inset">
         <label class="item-input-wrapper">
             <i class="ion-android-search placeholder-icon"></i>
-            <input id="searchKey" type="search" placeholder="Search" ng-model="searchText" autocorrect="off">
+            <input id="searchKey" type="search" placeholder="Search" ng-model="$parent.searchText" autocorrect="off">
             <button class="button button-clear" ng-click="clearSearch()" style="z-index:1024;">X</button>
         </label>
     </div>
