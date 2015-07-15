@@ -1,8 +1,12 @@
 'use strict';
 
-angular.module('starter', ['ionic','uiGmapgoogle-maps','dbaq.google.directions', 'ngRoute', 'ngCordova'])
+angular.module('starter', ['ionic', 'uiGmapgoogle-maps', 'dbaq.google.directions', 'ngRoute',
+    'ngCordova', 'ionic.service.core', 'ionic.service.push', 'ionic.service.analytics', 'ionic.service.deploy'
+])
 
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $ionicAnalytics,$rootScope) {
+    $ionicAnalytics.register();
+
     $ionicPlatform.ready(function() {
         if (window.cordova && window.cordova.plugins.Keyboard) {
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
@@ -10,10 +14,18 @@ angular.module('starter', ['ionic','uiGmapgoogle-maps','dbaq.google.directions',
         if (window.StatusBar) {
             StatusBar.styleDefault();
         }
+
+        $rootScope.$on('$cordovaNetwork:online', function(event, networkState) {
+            $rootScope.onlineState = networkState;
+        });
+
+        $rootScope.$on('$cordovaNetwork:offline', function(event, networkState) {
+            $rootScope.onlineState = networkState;
+        });
     });
 })
 
-.config(function($stateProvider, $urlRouterProvider) {
+.config(function($stateProvider, $urlRouterProvider, $ionicAppProvider) {
     $stateProvider
         .state('app', {
             url: "/app",
@@ -35,6 +47,15 @@ angular.module('starter', ['ionic','uiGmapgoogle-maps','dbaq.google.directions',
             views: {
                 'menuContent': {
                     templateUrl: "templates/about.html"
+                }
+            }
+        })
+        .state('app.update', {
+            url: "/update",
+            views: {
+                'menuContent': {
+                    templateUrl: "templates/update.html",
+                    controller: 'AppCtrl'
                 }
             }
         })
@@ -85,6 +106,12 @@ angular.module('starter', ['ionic','uiGmapgoogle-maps','dbaq.google.directions',
         })
 
     $urlRouterProvider.otherwise('/app/menus');
+
+    $ionicAppProvider.identify({
+        app_id: 'a850cd7e4f710f593fe41ddf502b16ebd38f15dfa0f81246',
+        api_key: 'ce9db87411af061f0c19e34ebf91fb49b134d5ced8c871d6',
+        dev_push: true
+    });
 })
 
 .config(['uiGmapGoogleMapApiProvider',

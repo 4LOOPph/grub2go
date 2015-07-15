@@ -1,5 +1,5 @@
 <div class="list">
-    <a ng-repeat="menu in menus" href="#/app/submenu/{{menu.id}}" class="item item-thumbnail-left item-icon-right">
+    <a ng-repeat="menu in menus" href="#/app/submenu/{{menu.id}}" ion-track-tap="Selected Category" ion-track-data="{ category: menu.title }" class="item item-thumbnail-left item-icon-right">
         <img ng-src="{{menu.logo}}">
         <h2>{{menu.title}}</h2>
         <h4>{{menu.Phone}}</h4>

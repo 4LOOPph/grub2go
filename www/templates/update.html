@@ -1,0 +1,12 @@
+<ion-view view-title="Update">
+    <ion-content>
+        <div class="padding">
+            <button class="button button-balanced button-block " ng-click="checkForUpdates()">
+                Check for Updates
+            </button>
+            <button class="button button-assertive button-block button-pulse" ng-if="hasUpdate" ng-click="doUpdate()">
+                Download Updates
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

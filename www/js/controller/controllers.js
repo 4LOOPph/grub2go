@@ -1,33 +1,28 @@
 'use strict';
 
 angular.module('starter')
-    .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
+    .controller('AppCtrl', function($scope, $ionicDeploy) {
 
-        $scope.loginData = {};
-
-        $ionicModal.fromTemplateUrl('templates/login.html', {
-            scope: $scope
-        }).then(function(modal) {
-            $scope.modal = modal;
-        });
-
-        $scope.closeLogin = function() {
-            $scope.modal.hide();
+        // Update app code with new release from Ionic Deploy
+        $scope.doUpdate = function() {
+            $ionicDeploy.update().then(function(res) {
+                console.log('Ionic Deploy: Update Success! ', res);
+            }, function(err) {
+                console.log('Ionic Deploy: Update error! ', err);
+            }, function(prog) {
+                console.log('Ionic Deploy: Progress... ', prog);
+            });
         };
 
-        // Open the login modal
-        $scope.login = function() {
-            $scope.modal.show();
-        };
+        // Check Ionic Deploy for new code
+        $scope.checkForUpdates = function() {
+            console.log('Ionic Deploy: Checking for updates');
+            $ionicDeploy.check().then(function(hasUpdate) {
+                console.log('Ionic Deploy: Update available: ' + hasUpdate);
+                $scope.hasUpdate = hasUpdate;
+            }, function(err) {
+                console.error('Ionic Deploy: Unable to check for updates', err);
+            });
+        }
 
-        $scope.doLogin = function() {
-            console.log('Doing login', $scope.loginData);
-
-            // Simulate a login delay. Remove this and replace with your login
-            // code if using a login system
-            $timeout(function() {
-                $scope.closeLogin();
-            }, 1000);
-        };
-
-    })
+    });

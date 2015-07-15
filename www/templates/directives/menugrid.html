@@ -2,7 +2,7 @@
     <div class="col col-50" ng-repeat="menu in menus">
         <div class="card">
             <div>
-                <a ng-href="#/app/submenu/{{menu.id}}">
+                <a ng-href="#/app/submenu/{{menu.id}}" ion-track-tap="Selected Category" ion-track-data="{ category: menu.title }">
                     <img class="topics-img" ng-src="{{menu.logo}}">
                 </a>
             </div>

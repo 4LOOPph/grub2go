@@ -21,6 +21,10 @@
     <script src="lib/angularjs-google-directions/dist/angularjs-google-directions.min.js"></script>
     <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <script src="lib/lodash/lodash.min.js"></script>
+    <script src="lib/ionic-service-core/ionic-core.js"></script>
+    <script src="lib/ionic-service-push/ionic-push.js"></script>
+    <script src="lib/ionic-service-analytics/ionic-analytics.js"></script>
+    <script src="lib/ionic-service-deploy/ionic-deploy.js"></script>
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
     <!-- your app's js -->
@@ -37,7 +41,7 @@
     <!-- for google maps -->
 </head>
 
-<body ng-app="starter">
+<body ng-app="starter" ion-track-auto="">
     <ion-nav-view></ion-nav-view>
 </body>
 

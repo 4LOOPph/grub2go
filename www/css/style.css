@@ -122,3 +122,7 @@ div.topic-name-topic i {
 .gray-bg {
     background-color: #502020;
 }
+
+.bar-footer label {
+    width: 100%;
+}

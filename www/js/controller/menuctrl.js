@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('starter')
-    .controller('MenusCtrl', function($scope, DataFactory) {
+    .controller('MenusCtrl', function($scope, DataFactory,$ionicAnalytics) {
 
     	$scope.changeStyle = function(){
     		$scope.isList = ($scope.isList == true) ? false : true;
