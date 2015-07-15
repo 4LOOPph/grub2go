@@ -11,7 +11,7 @@ angular.module('starter')
         $scope.setFocus = function() {
             console.log('message');
             $scope.hasFocus = true;
-            $scope.searchText = "";
+            //$scope.searchText = "";
         };
 
         $scope.noFocus = function() {
@@ -24,10 +24,11 @@ angular.module('starter')
             $scope.searchText = "";
             $scope.hasFocus = false;
             $scope.listCanSwipe = true;
+            $scope.querylimit = 15;
 
             DataFactory.Submenu().then(function(data) {
                 var submenus = $filter('filter')(data.data, {
-                    'menu_id': $stateParams.id
+                    'menu_id': $stateParams.menuid
                 });
                 $scope.submenus = submenus;
             });

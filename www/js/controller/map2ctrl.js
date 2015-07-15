@@ -30,14 +30,16 @@ angular.module('starter')
                 .getCurrentPosition(posOptions)
                 .then(function(position) {
 
-                    /*$scope.directions = {
-                        origin: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
-                        destination: new google.maps.LatLng(slat, slong)
-                    };*/
+                    // $scope.directions = {
+                    //     origin: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                    //     destination: new google.maps.LatLng(slat, slong)
+                    // };
+                    console.log('lat --> ',position.coords.latitude);
+                    console.log('lng --> ',position.coords.longitude);
 
                     $scope.directions = {
-                        origin: new google.maps.LatLng('37.7738571', '-122.4102823'),
-                        destination: new google.maps.LatLng('37.7891231', '-122.4173545')
+                        origin: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+                        destination: new google.maps.LatLng('8.4851', '124.6512')
                     };
 
                     var request = {

@@ -11,13 +11,4 @@ angular.module('starter')
             $ionicSlideBoxDelegate.update();
         });
         $scope.myActiveSlide = 1;
-        //show phone contacts when called
-        // $scope.getContactList = function() {
-        //     $cordovaContacts.find({filter: ''}).then(function(result) {
-        //         $scope.contacts = result;
-        //         $console.log($scope.contacts);
-        //     }, function(error) {
-        //         console.log("ERROR: " + error);
-        //     });
-        // }
     });

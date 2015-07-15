@@ -12,7 +12,7 @@
     <ion-content>
         <ion-refresher pulling-icon="ion-arrow-down-c" on-refresh="doRefresh()"></ion-refresher>
         <ion-list show-delete="false" show-reorder="false" can-swipe="true">
-            <ion-item  ng-repeat="submenu in submenus | filter:searchText" href="#/app/details/{{submenu.menu_id}}/{{$index}}" class="item item-thumbnail-left item-icon-right">
+            <ion-item  ng-repeat="submenu in submenus | filter:searchText | limitTo:querylimit" href="#/app/details/{{submenu.u_id}}" class="item item-thumbnail-left item-icon-right">
                 <img ng-src="{{submenu.logo}}">
                 <h2>{{submenu.title}}</h2>
                 <h4>{{submenu.location}}</h4>
