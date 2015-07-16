@@ -4,7 +4,7 @@
             <a class="button icon {{button.icon}}" ng-repeat="button in filters" ng-click="eventButton(button.name)" ng-class="{'button-balanced' : button.name === data.clientSide}"></a>
         </div>
     </div>
-    <ion-content>
+    <ion-content class="has-header">
         <div id="map_canvas">
             <ui-gmap-google-map control="map.control" center="map.center" zoom="map.zoom" draggable="false" options="options">
                 <ui-gmap-marker coords="marker.coords" options="marker.options" idkey="marker.id"></ui-gmap-marker>

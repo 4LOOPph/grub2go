@@ -20,6 +20,11 @@ angular.module('starter')
             $scope.searchText = "";
         };
 
+        $scope.CallTel = function(tel) {
+            console.log('tel: ', tel);
+            window.location.href = 'tel:' + tel;
+        };
+
         $scope.doRefresh = function() {
             $scope.submenus = {};
             DataFactory.Submenu().then(function(data) {

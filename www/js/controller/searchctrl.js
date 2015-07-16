@@ -6,4 +6,9 @@ angular.module('starter')
             $scope.dat = data.data;
             console.log($scope.dat);
         });
+
+        $scope.CallTel = function(tel) {
+        	console.log('tel: ', tel);
+            window.location.href = 'tel:'+ tel;
+        };
     });

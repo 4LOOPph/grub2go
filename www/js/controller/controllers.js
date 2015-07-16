@@ -1,8 +1,7 @@
 'use strict';
 
 angular.module('starter')
-    .controller('AppCtrl', function($scope, $ionicDeploy) {
-
+    .controller('AppCtrl', function($scope, $rootScope, $ionicDeploy) {
         // Update app code with new release from Ionic Deploy
         $scope.doUpdate = function() {
             $ionicDeploy.update().then(function(res) {

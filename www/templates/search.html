@@ -6,14 +6,20 @@
             <button class="button button-clear" ng-click="clearSearch()" style="z-index:1024;">X</button>
         </label>
     </div>
-    <ion-content class="has-subheader">
-        <div class="list">
-            <a ng-repeat="companyname in dat | filter:searchText " href="#/app/details/{{companyname.u_id}}" class="item item-thumbnail-left item-icon-right">
+    <ion-content class="has-header has-subheader flesh-bg">
+        <ion-list show-delete="false" show-reorder="false" can-swipe="true">
+            <ion-item ng-repeat="companyname in dat | filter:searchText " href="#/app/details/{{companyname.u_id}}" class="item item-g2g item-thumbnail-left item-icon-right">
                 <img ng-src="{{companyname.logo}}">
                 <h2>{{companyname.title}}</h2>
                 <h4>{{companyname.desc}}</h4>
                 <i class="icon ion-ios-arrow-right"></i>
-            </a>
+                <ion-option-button class="button-assertive" ng-click="CallTel(companyname.Phone)">
+                    <i class="icon ion-ios-telephone-outline"></i>
+                </ion-option-button>
+                <ion-option-button class="button-balanced" ui-sref="app.map2">
+                    <i class="icon ion-ios-location-outline"></i>
+                </ion-option-button>
+            </ion-item>
         </div>
-    </ion-content>
+    </ion-list>
 </ion-view>

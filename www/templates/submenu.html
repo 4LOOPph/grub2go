@@ -9,7 +9,7 @@
           <button ng-click="noFocus()" class="button button-clear ion-close light"></button>
       </span>
     </ion-nav-buttons>
-    <ion-content class="flesh-bg">
+    <ion-content class="has-header flesh-bg">
         <ion-refresher pulling-icon="ion-arrow-down-c" on-refresh="doRefresh()"></ion-refresher>
         <ion-list show-delete="false" show-reorder="false" can-swipe="true">
             <ion-item ng-repeat="submenu in submenus | filter:searchText | limitTo:querylimit" href="#/app/details/{{submenu.u_id}}" class="item item-g2g item-thumbnail-left item-icon-right">
@@ -17,10 +17,10 @@
                 <h2>{{submenu.title}}</h2>
                 <h4>{{submenu.Location}}</h4>
                 <i class="icon ion-ios-arrow-right"></i>
-                <ion-option-button class="button-assertive" ng-href="tel:{{submenu.Phone}}">
+                <ion-option-button class="button-assertive" ng-click="CallTel(submenu.Phone)">
                     <i class="icon ion-ios-telephone-outline"></i>
                 </ion-option-button>
-                <ion-option-button class="button-balanced" href="#/app/map2">
+                <ion-option-button class="button-balanced" ui-sref="app.map2">
                     <i class="icon ion-ios-location-outline"></i>
                 </ion-option-button>
             </ion-item>
