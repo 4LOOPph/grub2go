@@ -1,7 +1,7 @@
 [{
     "title": "Fast Food",
     "id": "1",
-    "logo": "img/fastfoods/logo.jpg",
+    "logo": "img/fastfoods/logo.png",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
     "title": "Restaurant",
@@ -16,11 +16,11 @@
 }, {
     "title": "Drinks and Liquor",
     "id": "4",
-    "logo": "img/DrinksandLiquor/logo.jpg",
+    "logo": "img/DrinksandLiquor/logo.png",
     "desc": "dsaoreuh 24iudhf 4"
 }, {
     "title": "Coffee and Tea",
     "id": "5",
-    "logo": "img/coffeeandtea/logo.jpg",
+    "logo": "img/coffeeandtea/logo.png",
     "desc": "dsaoreuh 24iudhf 4"
 }]
