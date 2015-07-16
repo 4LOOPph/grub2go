@@ -123,6 +123,10 @@ div.topic-name-topic i {
     background-color: #502020;
 }
 
+.flesh-bg {
+    background-color: #FCC9B9;
+}
+
 .g2g,
 a.g2g {
     color: #502020 !important;
@@ -133,8 +137,8 @@ a.g2g {
 }
 
 .item.item-g2g {
-    border-color: #F1A9A0;
-    background-color: #F1A9A0;
+    border-bottom: 3px solid #E68364;
+    background-color: #FCC9B9 !important;
     color: #502020;
 }
 
@@ -144,6 +148,11 @@ a.g2g {
 .item-complex.activated .item-content.item-g2g,
 .item .item-content.active.item-g2g,
 .item .item-content.activated.item-g2g {
-    border-color: #0c63ee;
-    background-color: #0c63ee;
+    border-bottom: 2px solid #E68364;
+    background-color: #FCC9B9 !important;
+}
+
+.item-g2g.item-complex .item-content,
+.item-g2g.item-radio .item-content {
+    background-color: #FCC9B9 !important;
 }
