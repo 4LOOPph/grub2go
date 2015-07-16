@@ -1,5 +1,6 @@
-<ion-view view-title="{{}}">
+<ion-view view-title="{{det.title}}">
     <ion-content>
+        <ion-refresher pulling-icon="ion-arrow-down-c" on-refresh="doRefresh()"></ion-refresher>
         <ion-slide-box active-slide="myActiveSlide">
             <ion-slide ng-repeat="photo in det.images">
                 <div class="box">
@@ -15,11 +16,7 @@
             </div>
             <div class="item item-body">
                 <p>
-                    {{detalye.details}}
-                </p>
-                <p>
-                    <a href="#" class="subdued">1000k Likes</a>
-                    <a href="#" class="subdued">200k Comments</a>
+                    {{det.details}}
                 </p>
             </div>
         </div>

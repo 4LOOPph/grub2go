@@ -17,8 +17,12 @@
                 <h2>{{submenu.title}}</h2>
                 <h4>{{submenu.Location}}</h4>
                 <i class="icon ion-ios-arrow-right"></i>
-                <ion-option-button class="button-assertive icon ion-ios-telephone-outline"></ion-option-button>
-                <ion-option-button class="button-balanced icon ion-ios-location-outline"></ion-option-button>
+                <ion-option-button class="button-assertive" ng-href="tel:{{submenu.Phone}}">
+                    <i class="icon ion-ios-telephone-outline"></i>
+                </ion-option-button>
+                <ion-option-button class="button-balanced" href="#/app/map2">
+                    <i class="icon ion-ios-location-outline"></i>
+                </ion-option-button>
             </ion-item>
         </ion-list>
     </ion-content>

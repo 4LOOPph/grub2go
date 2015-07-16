@@ -19,8 +19,20 @@ angular.module('starter')
             $scope.hasFocus = false;
             $scope.searchText = "";
         };
-          
+
+        $scope.doRefresh = function() {
+            $scope.submenus = {};
+            DataFactory.Submenu().then(function(data) {
+                var submenus = $filter('filter')(data.data, {
+                    'menu_id': $stateParams.menuid
+                });
+                $scope.submenus = submenus;
+                $scope.$broadcast('scroll.refreshComplete');
+            });
+        };
+
         function init() {
+            $scope.submenus = {};
             $scope.searchText = "";
             $scope.hasFocus = false;
             $scope.listCanSwipe = true;
