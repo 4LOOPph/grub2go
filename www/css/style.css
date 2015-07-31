@@ -1,23 +1,35 @@
 /* iOS Header Height */
-.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
-  margin-top: 20px;
-}
-.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
-  height: 90px;
-}
-.platform-ios.platform-cordova:not(.fullscreen) .has-header {
-  top: 64px;
+
+/*.platform-ios.platform-cordova:not(.fullscreen) .bar-header {
+    height: 44px !important;
 }
 
-.platform-ios7.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
-  margin-top: 20px;
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
+    height: 44px !important;
 }
-.platform-ios7.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) {
-  height: 64px;
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader).item-input-inset .item-input-wrapper {
+    margin-top: 10px !important;
 }
-.platform-ios7.platform-cordova:not(.fullscreen) .has-header {
-  top: 64px;
+
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > * {
+    margin-top: 10px !important;
 }
+
+.platform-ios.platform-cordova:not(.fullscreen) .tabs-top > .tabs,
+.platform-ios.platform-cordova:not(.fullscreen) .tabs.tabs-top {
+    top: 44px !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .has-header,
+.platform-ios.platform-cordova:not(.fullscreen) .bar-subheader {
+    top: 44px !important;
+}
+
+.platform-ios.platform-cordova:not(.fullscreen) .has-subheader {
+    top: 88px !important;
+}
+*/
 
 /* Empty. Add your own CSS if you like */
 
@@ -104,7 +116,6 @@ div.topic-name-topic i {
 
 .bar.bar-g2g {
     /*border-color: #F39C12;*/
-
     border-bottom: 3px solid #F39C12;
     background-color: #F1C40F;
     background-image: linear-gradient(0deg, #F1C40F, #F1C40F 50%, transparent 50%);

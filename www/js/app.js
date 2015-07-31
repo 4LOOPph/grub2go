@@ -13,7 +13,8 @@ angular.module('starter', ['ionic', 'uiGmapgoogle-maps', 'dbaq.google.directions
             cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
         }
         if (window.StatusBar) {
-            StatusBar.styleDefault();
+            // StatusBar.styleDefault();
+            StatusBar.overlaysWebView(true);
         }
 
         $rootScope.$on('$cordovaNetwork:online', function(event, networkState) {
@@ -29,6 +30,8 @@ angular.module('starter', ['ionic', 'uiGmapgoogle-maps', 'dbaq.google.directions
             console.log('Ionic Push: Got token ', data.token, data.platform);
             $rootScope.token = data.token;
         });
+
+        ionic.Platform.fullScreen();
 
         // Identifies a user with the Ionic User service
         console.log('Ionic User: Identifying with Ionic User service');

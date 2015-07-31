@@ -8,8 +8,10 @@ angular.module('starter')
             DataFactory.Submenu().then(function(data) {
                 var submenus = $filter('filter')(data.data, {
                     'u_id': $stateParams.uid
-                });
-                $scope.det = details[0];
+                }, true);
+                console.info('submenus: ',submenus);
+                $scope.det = submenus[0];
+                $ionicSlideBoxDelegate.update();
                 $scope.$broadcast('scroll.refreshComplete');
             });
         };
@@ -18,7 +20,7 @@ angular.module('starter')
             DataFactory.Submenu().then(function(data) {
                 var details = $filter('filter')(data.data, {
                     'u_id': $stateParams.uid
-                });
+                }, true);
                 $scope.det = details[0];
                 $ionicSlideBoxDelegate.update();
             });
@@ -26,7 +28,7 @@ angular.module('starter')
             $scope.isConnected = $rootScope.onlineState;
         }
 
-        $scope.$watch(function() {
+        $scope.$watch($rootScope.onlineState,function() {
             return $scope.isConnected = $rootScope.onlineState;
         }, true);
 
